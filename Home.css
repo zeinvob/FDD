@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    background-color: black;
+    height: 95px;
+    margin-top: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.container{
+    width: 1190px;
+    height: 100px;
+    margin: 0 auto;
+}
+nav .nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+nav .left{
+    width: 20%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+nav .left img{
+    width: 92%;
+    height: 100%;
+    transition: 0.6s
+}
+nav .left img:hover{
+    width: 95%;
+    transition: 0.6s
+}
+nav .middle{
+    width: 45%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+}
+nav .middle .bar{
+    width: 100%;
+    height: 40%;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+nav .right{
+    width: 17%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .middle ul li{
+    display: inline-block;
+    padding-left: 39px;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    transition: 0.7s;
+}
+nav .middle ul li:hover{
+    letter-spacing: 1px;
+    color:#02bee4;
+}
+.right .signin{
+    width: 70%;
+    height: 40%;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
+    border: 2px solid #04a4c4;
+    color: white;
+    border-radius: 50px;
+    transition: .7s;
+    letter-spacing: 1px;
+    padding-top: 2px ;
+    animation: change 7s infinite;
+    background-size: 200% 200%;
+}
+.right .signin:hover{
+    background: linear-gradient(to right,#ffffff, #ffffff);
+    cursor: pointer;
+    color:#04a4c4;
+    letter-spacing: 5px;
+    padding-left: 7px;
+    font-size: 20px;
+    background-size: 200% 200%;
+}
+@keyframes change{
+    0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+}
+.herotext{
+    width: 1140px;
+    height: 660px;
+    margin: 0 auto;
+    /*background-color: #000000;*/
+    position: relative;
+    right: 10px
+}
+.herotext h1{
+    width: 650px;
+    font-family: Poppins;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    top: 150px;
+    line-height: 68px;
+}
+.herotext .slogan{
+    position: absolute;
+    top: 300px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 18px;
+    width: 400px;
+    color: white;
+    line-height: 25px;
+}
+.herotext button{
+    background-color: #191919;
+    color: white;
+    position: relative;
+    top: 370px;
+    width: 200px;
+    height: 52px;
+    background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
+    font-size: 21px;
+    font-weight: 500;
+    background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
+    border: 2px solid #02bee4;
+    color: white;
+    letter-spacing: 5px;
+    transition: .7s;
+    padding-top: 2px ;
+    animation: change 7s infinite;
+    background-size: 200% 200%;
+    cursor: pointer;
+}
+.herotext button:hover{
+    letter-spacing: 0;
+    animation-play-state: paused;
+}
+.backgroundlogo{
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    top: -5px;
+}
+.backgroundlogo .one{
+    width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.backgroundlogo img{
+    width: 53%;
+    position: absolute;
+    left: 47%;
+    top: 20%;
+    animation: dim 1.5s ease infinite alternate;
+}
+@keyframes dim {
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 40%;
+    }
+}
+.herotext .heroimg img{
+    width: 49%;
+    /* background-color: #02bee4; */
+    position: relative;
+    left: 659px;
+    bottom: 230px;
+}
+.land2{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.land2 .container{
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #02bee4;
+}
