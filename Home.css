@@ -6,7 +6,7 @@
 body{
     background-color: rgb(0, 0, 0);
     width: 100%;
-    height: 100vh;
+    height: 500vh;
 }
 nav{
     background-color: black;
@@ -76,6 +76,9 @@ nav .middle ul li{
 nav .middle ul li:hover{
     letter-spacing: 1px;
     color:#02bee4;
+}
+nav .middle ul .home {
+    color: #02bee4;
 }
 .right .signin{
     width: 70%;
@@ -148,7 +151,6 @@ nav .middle ul li:hover{
     top: 370px;
     width: 200px;
     height: 52px;
-    background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
     font-size: 21px;
     font-weight: 500;
     background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
@@ -203,12 +205,99 @@ nav .middle ul li:hover{
 }
 .land2{
     width: 100%;
-    height: 100vh;
+    height: 500vh;
     background-color: white;
 }
 .land2 .container{
-    width: 1180px;
+    width: 1140px;
     height: 100%;
     margin: 0 auto;
-    background-color: #02bee4;
+    background-color: #ffffff;
+    position: relative;
+}
+.container .holder{
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 180px;
+}
+.container .holder .holder_in{
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+}
+.container .holder .holder_in .image
+{
+    height: 100%;
+    width: 41%;
+    position: relative;
+}
+.container .holder .holder_in .image img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position:  center;
+}
+.container .holder .holder_in .image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Black overlay */
+    pointer-events: none; /* So it doesn't block clicks */
+}
+.holder_in .text {
+    position: relative;
+    height: 100%;
+    width: 59%;
+}
+.holder_in .text h2{
+    width: 600px;
+    font-family: Poppins;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    letter-spacing: 3px;
+}
+.holder_in .text p{
+    width: 530px;
+    position: absolute;
+    bottom: 150px;
+    left: 70px;
+    font-family: Poppins;
+    font-size: 15px;
+}
+.holder_in button{
+    background-color: #191919;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    left: 70px;
+    width: 130px;
+    height: 35px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
+    border: 1px solid #0098b6;
+    color: white;
+    letter-spacing: 2px;
+    transition: .7s;
+    animation: change 7s infinite;
+    background-size: 200% 200%;
+    cursor: pointer;
+}
+.holder_in button:hover{
+    letter-spacing: 8px;
+    animation-play-state: paused;
+    padding-left: 8px;
 }
