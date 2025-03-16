@@ -11,7 +11,7 @@ body{
 nav{
     background-color: black;
     height: 95px;
-    margin-top: 40px;
+    margin-top: 2+0px;
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -92,7 +92,7 @@ nav .middle ul .home {
     border-radius: 50px;
     transition: .7s;
     letter-spacing: 1px;
-    padding-top: 2px ;
+    padding-top: 3px;
     animation: change 7s infinite;
     background-size: 200% 200%;
 }
@@ -102,7 +102,7 @@ nav .middle ul .home {
     color:#04a4c4;
     letter-spacing: 5px;
     padding-left: 7px;
-    font-size: 20px;
+    font-size: 18px;
     background-size: 200% 200%;
 }
 @keyframes change{
@@ -202,10 +202,11 @@ nav .middle ul .home {
     position: relative;
     left: 659px;
     bottom: 230px;
+    animation: scaleIn 0.8s ease-out;
 }
 .land2{
     width: 100%;
-    height: 500vh;
+    height: 650px;
     background-color: white;
 }
 .land2 .container{
@@ -215,16 +216,16 @@ nav .middle ul .home {
     background-color: #ffffff;
     position: relative;
 }
-.container .holder{
+.land2 .container .holder{
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-color: #ffffff;
     position: absolute;
-    top: 180px;
+    top: 150px;
 }
 .container .holder .holder_in{
     width: 100%;
-    height: 90%;
+    height: 100%;
     background-color: #ffffff;
     overflow: hidden;
     display: flex;
@@ -234,6 +235,7 @@ nav .middle ul .home {
     height: 100%;
     width: 41%;
     position: relative;
+    animation: scaleIn 0.8s ease-out;
 }
 .container .holder .holder_in .image img{
     height: 100%;
@@ -301,3 +303,144 @@ nav .middle ul .home {
     animation-play-state: paused;
     padding-left: 8px;
 }
+
+.land3{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(244, 244, 244);
+}
+.land3 .container{
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
+.land3 .container .holder1{
+    width: 100%;
+    height: 38%;
+    position: relative;
+}
+.holder1 .text1 h2{
+    width: 100%;
+    font-family: Poppins;
+    font-size: 45px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    position: absolute;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: centers;
+    top: 40px;
+}
+.holder1 .text2 {
+    position: relative;
+}
+.holder1 .text2 p{
+    width: 77%;
+    position: absolute;
+    font-family: Poppins;
+    font-size: 15px;
+    left: 50%;
+    transform: translateX(-51%);
+    top: 90px;
+    text-align: center;
+    top: 110px;
+}
+.land3 .container .card_container{
+    width: 100%;
+    height: 62%;
+    position: relative;
+    display: flex;
+    column-gap: 8px;
+    perspective: 1000px;
+    flex-wrap: nowrap;
+    animation: scaleIn 0.8s ease-out;
+}
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.card1, .card2, .card3, .card4
+{
+    width: 25%;
+    height: 100%;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    cursor: pointer;
+}
+.front{
+    background-color: #0eff5b;
+    transform: rotateY(0deg);
+}
+.back{
+    background-color: aqua;
+    transform: rotateY(180deg);
+}
+
+.flipped{
+    transform: rotateY(180deg);
+}
+
+.card1 .front img{
+    position: absolute;
+    width: 300px;
+    top: -70px;
+    left: -20px;
+}
+.card2 .front img{
+    position: absolute;
+    width: 380px;
+    top: -10px;
+    left: -50px;
+}
+.card3 .front img{
+    position: absolute;
+    width: 380px;
+    top: -20px;
+    left: -50px;
+}
+.card4 .front img{
+    position: absolute;
+    width: 500px;
+    top: -70px;
+    left: -170px;
+}
+
+.front .mini-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    overflow: hidden;
+}
+.front .mini-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-color: rgb(255, 255, 255, 0.8);
+    top: 400px; /* Initial position */
+    transition: 0.8s;
+}
+.front .mini-container:hover::after {
+    top: 220px;
+}
+
+
