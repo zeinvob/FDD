@@ -88,13 +88,16 @@ nav .middle ul .home {
     font-weight: 500;
     background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
     border: 2px solid #04a4c4;
-    color: white;
     border-radius: 50px;
     transition: .7s;
     letter-spacing: 1px;
     padding-top: 3px;
     animation: change 7s infinite;
     background-size: 200% 200%;
+}
+.right .signin a{
+    text-decoration: none;
+    color: white;
 }
 .right .signin:hover{
     background: linear-gradient(to right,#ffffff, #ffffff);
@@ -386,7 +389,6 @@ nav .middle ul .home {
     cursor: pointer;
 }
 .front{
-    background-color: #0eff5b;
     transform: rotateY(0deg);
 }
 .back{
