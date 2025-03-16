@@ -24,7 +24,6 @@ nav{
 nav .nav_wrapper{
     display: flex;
     justify-content: space-between;
- 
 }
 nav .left{
     width: 20%;
