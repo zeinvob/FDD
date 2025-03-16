@@ -11,9 +11,9 @@ body{
 nav{
     background-color: black;
     height: 95px;
-    margin-top: 2+0px;
+    margin-top: 20px;
     position: sticky;
-    top: 0;
+    top: 0px;
     z-index: 9999;
 }
 .container{
