@@ -85,6 +85,8 @@ nav .middle ul .home {
     font-family: Poppins;
     font-size: 17px;
     font-weight: 500;
+    text-decoration: none;
+    color: white;
     background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
     border: 2px solid #04a4c4;
     border-radius: 50px;
@@ -93,10 +95,6 @@ nav .middle ul .home {
     padding-top: 3px;
     animation: change 7s infinite;
     background-size: 200% 200%;
-}
-.right .signin a{
-    text-decoration: none;
-    color: white;
 }
 .right .signin:hover{
     background: linear-gradient(to right,#ffffff, #ffffff);
