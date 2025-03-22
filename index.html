@@ -14,7 +14,7 @@
             card.classList.remove("flipped");
         }
     </script>
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./Home.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
                             <a href = "./index.html"><li class="home">Home</li></a>
                             <a href = "#"><li>About</li></a>
                             <a href = "#"><li>Blog</li></a>
-                            <a href = "#"><li>Packages</li></a>
+                            <a href = "#trainer"><li>Packages</li></a>
                             <a href = "#"><li>Contact</li></a>
                         </ul>
                     </div>
@@ -49,7 +49,7 @@
         </div>
     </nav>
     <div class="backgroundlogo">
-        <div class="one">
+        <div class="one arrival">
             <img src="./Images/bg image logo-03.png">
         </div>
     </div>
@@ -61,16 +61,19 @@
         <button>
             JOIN US
         </button>
+        <div class="contact-us">
+            <button>CONTACT US</button>
+        </div>
         <div class="heroimg">
             <img src="./Images/portrait-handsome-man.png">
         </div>
     </div>
-    <section>
+    <section class="arrival">
         <div class="land2">
             <div class="container">
                 <div class="holder">
                     <div class="holder_in">
-                        <div class="image"><img src="./Images/pexels-victorfreitas-841130.jpg"></div>
+                        <div class="image arrival"><img src="./Images/pexels-victorfreitas-841130.jpg"></div>
                         <div class="text">
                             <h2>Nutriton & Training Plans</h2>
                             <p>Our personalized nutrition and training plans are designed to help you reach your fitness goals faster and more efficiently. Stay motivated with expert guidance tailored just for you.</p>
@@ -81,7 +84,8 @@
             </div>
         </div>
     </section>
-    <section>
+    <div id="trainer"></div>
+    <section class="arrival">
         <div class = "land3">
             <div class="container">
                 <div class="holder1">
@@ -98,52 +102,107 @@
                     <div class="card1" onclick="flipcard(this)" onmouseleave="flipback(this)">
                         <div class="front">
                             <img src="./Images/card1.jpg">
+                            <div class="image-container1">
+                                <img src="./Images/rotate2-01.png">
+                            </div>
                             <div class="mini-container">
-                                <div class="mona"></div>
+                                <div class="mona">
+                                    <h1>Alexa Smith</h1>
+                                    <h3>Core Strength Trainer</h3>
+                                </div>
                             </div>
                         </div>
                         <div class="back">
-                            <h3>This the back</h3>
+                            <div class="back_img">
+                                <img src="./Images/bg image logo card-01.png">
+                            </div>
+                            <button onclick="window.location.href='./login.html';">Hire Me</button>
                         </div>
                     </div>
                     <div class="card2" onclick="flipcard(this)" onmouseleave="flipback(this)">
                         <div class="front">
                             <img src="./Images/card2.jpg">
+                            <div class="image-container2">
+                                <img src="./Images/rotate2-01.png">
+                            </div>
                             <div class="mini-container">
-                                <div class="mona"></div>
+                                <div class="mona">
+                                    <h1>Rex Jordan</h1>
+                                    <h3>Sports Trainer</h3>
+                                </div>
                             </div>
                         </div>
                         <div class="back">
-                            <h3>This the back</h3>
+                            <div class="back_img">
+                                <img src="./Images/bg image logo card-01.png">
+                            </div>
+                            <button onclick="window.location.href='./login.html';">Hire Me</button>
                         </div>
                     </div>
                     <div class="card3" onclick="flipcard(this)" onmouseleave="flipback(this)">
                         <div class="front">
                             <img src="./Images/card3.jpg">
+                            <div class="image-container3">
+                                <img src="./Images/rotate2-01.png">
+                            </div>
                             <div class="mini-container">
-                                
+                                <div class="mona">
+                                    <h1>Alisha Stone</h1>
+                                    <h3>Weight Loss Trainer</h3>
+                                </div>
                             </div>
                         </div>
                         <div class="back">
-                            <h3>This the back</h3>
+                            <div class="back_img">
+                                <img src="./Images/bg image logo card-01.png">
+                            </div>
+                            <button onclick="window.location.href='./login.html';">Hire Me</button>
                         </div>
                     </div>
                     <div class="card4" onclick="flipcard(this)" onmouseleave="flipback(this)">
                         <div class="front">
                             <img src="./Images/card4.jpg">
+                            <div class="image-container4">
+                                <img src="./Images/rotate2-01.png">
+                            </div>
                             <div class="mini-container">
-                                
+                                <div class="mona">
+                                    <h1>Andrew John</h1>
+                                    <h3>Senior Fitness Trainer</h3>
+                                </div>
                             </div>
                         </div>
                         <div class="back">
-                            <h3>This the back</h3>
+                            <div class="back_img">
+                                <img src="./Images/bg image logo card-01.png">
+                            </div>
+                            <button onclick="window.location.href='./login.html';">Hire Me</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-   
-    
+
+    <div class="null"></div>
+
+   <section>
+        <div class="land4">
+            <div class="text1">
+                <h1>START  OUR  MEMBERSHIP  EXPERIENCE  NOW!!!</h1>
+            </div>
+            <div class="text2">
+                <p>Unlock Exclusive Workouts, Premium Facilities, and Personalized Training. Join Today and Take Your Fitness to the Next Level</p>
+            </div>
+            <div class="button-container">
+                <button>Register Now</button>
+            </div>
+        </div>
+   </section>
+   <section>
+        <div class="land5">
+            
+        </div>
+   </section>
 </body>
 </html>

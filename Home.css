@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,25 @@
 body{
     background-color: rgb(0, 0, 0);
     width: 100%;
-    height: 500vh;
+    height: 700vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+.arrival{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 nav{
     background-color: black;
@@ -155,21 +175,74 @@ nav .middle ul .home {
     font-weight: 500;
     background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
     border: 2px solid #02bee4;
-    color: white;
+    border-radius: 5px;
     letter-spacing: 5px;
-    transition: .7s;
+    transition: 1s ease-in-out, color 0.5s ease-in-out;
     padding-top: 2px ;
     animation: change 7s infinite;
     background-size: 200% 200%;
     cursor: pointer;
+    z-index: 1;
 }
-.herotext button:hover{
-    letter-spacing: 0;
-    animation-play-state: paused;
+.herotext button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(60deg, #fdffff, #ffffff, #ffffff);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    z-index: -1;
 }
+
+.herotext button:hover::before {
+    opacity: 1;
+}
+.herotext button:hover {
+    color: rgb(13, 160, 160); 
+}
+
+.herotext .contact-us button {
+    background-color: #191919;
+    color: white;
+    position: absolute;
+    top: 318px;
+    left: 230px;
+    width: 220px;
+    height: 52px;
+    font-size: 21px;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid #02bee4;
+    color: white;
+    letter-spacing: 5px;
+    transition: 0.7s;
+    padding-top: 2px;
+    animation: change 7s infinite;
+    background-size: 200% 200%;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.herotext .contact-us button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    animation: change 7s infinite;
+    background-size: 200% 200%;
+    z-index: -1;
+}
+
+.herotext .contact-us button:hover::before {
+    opacity: 1;
+}
+
 .backgroundlogo{
     width: 100%;
-    height: 800px;
+    height: 780px;
     margin: 0 auto;
     overflow: hidden;
     position: absolute;
@@ -203,6 +276,10 @@ nav .middle ul .home {
     left: 659px;
     bottom: 230px;
     animation: scaleIn 0.8s ease-out;
+    transition: 1s;
+}
+.herotext .heroimg img:hover{
+    transform: rotateY(deg360);
 }
 .land2{
     width: 100%;
@@ -282,12 +359,12 @@ nav .middle ul .home {
     background-color: #191919;
     color: white;
     position: absolute;
-    bottom: 100px;
+    bottom: 86px;
     left: 70px;
-    width: 130px;
-    height: 35px;
+    width: 142px;
+    height: 42px;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
     background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
     border: 1px solid #0098b6;
@@ -384,17 +461,59 @@ nav .middle ul .home {
     backface-visibility: hidden;
     overflow: hidden;
     cursor: pointer;
+    transition: 2s;
 }
+
 .front{
     transform: rotateY(0deg);
 }
 .back{
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
     transform: rotateY(180deg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flipped{
     transform: rotateY(180deg);
+}
+.back button{
+    background-color: #191919;
+    color: white;
+    width: 160px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
+    background-size: 200% 200%;
+    animation: change 7s infinite;
+    border: 1px solid #0098b6;
+    letter-spacing: 2px;
+    transition: .7s;
+    cursor: pointer;
+    position: absolute;
+    padding-top: 2px;
+}
+.back button:hover{
+    letter-spacing: 5px;
+    animation-play-state: paused;
+    padding-left: 7px;
+}
+.back_img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 40px;
+    left: -95px;
+}
+.back_img img{
+    width: 420px;
+    height: auto;
+    opacity: .125;
+    filter: blur(2px);
 }
 
 .card1 .front img{
@@ -434,12 +553,145 @@ nav .middle ul .home {
     position: absolute;
     width: 100%;
     height: 40%;
-    background-color: rgb(255, 255, 255, 0.8);
+    background: linear-gradient(60deg, #308895, #47d4f1, #308895);
+    background-size: 200% 200%;
+    opacity: 0.8;
+    animation: change 7s infinite;
     top: 400px; /* Initial position */
     transition: 0.8s;
 }
 .front .mini-container:hover::after {
-    top: 220px;
+    top: 210px;
+}
+
+.image-container1 {
+    position: absolute;
+    right: 18px;
+    top:61px;
+}
+.image-container2 {
+    position: absolute;
+    right: -13px;
+
+}
+.image-container3 {
+    position: absolute;
+    right: -14px;
+    top:10px;
+}
+.image-container4 {
+    position: absolute;
+    right: -133px;
+    top:61px;
+}
+.image-container1 img, .image-container2 img,.image-container3 img,.image-container4 img {
+    width: 35px !important;
+    height: auto;
+    opacity: 0.6;
 }
 
 
+.front .mini-container .mona {
+    position: absolute;
+    width: 100%;
+    top: 400px; /* Match ::after's initial position */
+    text-align: center;
+    transition: 0.8s; /* Same timing as ::after */
+    z-index: 10;
+}
+
+/* Move text along with the hover effect */
+.front .mini-container:hover .mona {
+    top: 240px; /* Match ::after's hover position */
+}
+
+/* Style for the h1 inside mona */
+.front .mini-container .mona h1 {
+    font-size: 24px;
+    font-family: Poppins;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 500;
+}
+.front .mini-container .mona h3 {
+    font-size: 15px;
+    font-family: Poppins;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 200;
+    line-height: 18px;
+}
+.null{
+    background-color: rgb(244, 244, 244);
+    width: 100%;
+    height: 75px;
+}
+.land4{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(60deg, #000000, #123241, #000000);
+    background-size: 200% 200%;
+    animation: change 7s infinite;
+}
+.land4 .text1, .text2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.land4 .text1 h1{
+    position: absolute;
+    font-family: Tektur;
+    font-size: 52px;
+    font-weight: 600;
+    text-align: center;
+    top: 95px;
+    color: #ffffff;
+}
+.land4 .text2 p{
+    position: absolute;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    top: 185px;
+    color: #ffffff;
+}
+.land4 .button-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.land4 .button-container button{
+    position: absolute;
+    top: 259px;
+    width: 200px;
+    height: 50px;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(60deg, #ffffff, #f2fdff, #ffffff);
+    border: 2px solid #04a4c4;
+    transition: .7s;
+    letter-spacing: 1px;
+    padding-top: 3px;
+    animation: change 7s infinite;
+    background-size: 200% 200%;
+    border-radius: 5px;
+}
+.land4 .button-container button:hover{
+    background: linear-gradient(to right,#ffffff, #ffffff);
+    cursor: pointer;
+    color:#000000;
+    font-size: 21px;
+    background-size: 200% 200%;
+    /* Move the button slightly up */
+    transform: translateY(-8px);
+    transition: transform 0.5s ease-in-out;
+}
+.land5{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}

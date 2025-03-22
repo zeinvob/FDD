@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2a2a2a; /* Dark background for a sleek look */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex; /* Align buttons and the card wrapper horizontally */
+    align-items: center; 
+    flex-wrap: nowrap;
+    justify-content: center; 
+    padding: 20px; /* Padding around the container */
+    position: relative; /* For positioning navigation buttons */
+}
+
+.card-wrapper {
+    display: flex; /* Cards in a row */
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+    overflow: hidden; /* Hide overflowing cards */
+    width: 900px; /* Width for showing three cards at once (3 * 300px) */
+}
+
+.price-card {
+    background: linear-gradient(to bottom right, #ffffff, #e0f7fa); /* Gradient background */
+    border: 2px solid #00695c; /* Dark cyan border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 25px; /* Padding inside the card */
+    text-align: center;
+    width: 500px; /* Fixed width per card */
+    margin-right: 20px; /* Space between cards */
+    transition: 0.6s;
+}
+
+.price-card:last-child {
+    margin-right: 0; /* Remove margin on the last card */
+}
+
+/* Hover effect for floating effect */
+.price-card:hover {
+    transform: translateY(-15px); /* Float effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.card-title {
+    font-size: 26px; /* Title size */
+    color: #004d40; /* Dark cyan title color */
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 24px; /* Price font size */
+    color: #00796b; /* Lighter dark cyan for emphasis */
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 16px; /* Regular size for description */
+    color: #555; /* Gray description */
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #00796b; /* Dark cyan button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 18px; /* Padding for button */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Button effects */
+}
+
+.btn:hover {
+    background-color: #004d40; /* Darker on hover */
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
+.nav-button {
+    background-color: #004d40; /* Dark cyan button color */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Circular buttons */
+    width: 40px; /* Button size */
+    height: 40px; /* Button size */
+    cursor: pointer;
+    position: absolute; /* Positioned relative to container */
+    top: 50%; /* Centered vertically */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    z-index: 1; /* Above cards */
+}
+
+.left {
+    left: 10px; /* Left button placement */
+}
+
+.right {
+    right: 10px; /* Right button placement */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 480px) {
+    .price-card {
+        width: 90%; /* Full width on smaller screens */
+        padding: 15px; /* Adjusted padding */
+    }
+
+    .card-title {
+        font-size: 24px; /* Responsive title */
+    }
+
+    .price {
+        font-size: 22px; /* Responsive price font */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items for small screens */
+        align-items: stretch; /* Full width alignment */
+    }
+}
