@@ -270,11 +270,11 @@ nav .middle ul .home {
     }
 }
 .herotext .heroimg img{
-    width: 49%;
+    width: 50%;
     /* background-color: #02bee4; */
     position: relative;
-    left: 659px;
-    bottom: 230px;
+    left: 646px;
+    bottom: 299px;
     animation: scaleIn 0.8s ease-out;
     transition: 1s;
 }
