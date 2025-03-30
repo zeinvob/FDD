@@ -306,6 +306,7 @@ nav .middle ul .home {
     background-color: #ffffff;
     overflow: hidden;
     display: flex;
+    border-radius: 200px;
 }
 .container .holder .holder_in .image
 {
@@ -496,6 +497,7 @@ nav .middle ul .home {
     cursor: pointer;
     position: absolute;
     padding-top: 2px;
+    border-radius: 3px;
 }
 .back button:hover{
     letter-spacing: 5px;
@@ -625,12 +627,14 @@ nav .middle ul .home {
     width: 100%;
     height: 75px;
 }
+
 .land4{
     width: 100%;
     height: 400px;
     background: linear-gradient(60deg, #000000, #123241, #000000);
     background-size: 200% 200%;
     animation: change 7s infinite;
+    position: relative;
 }
 .land4 .text1, .text2{
     position: relative;
@@ -696,6 +700,419 @@ nav .middle ul .home {
     background-color: rgb(255, 255, 255);
 }
 
+/* Roll bar */
+
+.rollbar {
+    width: 100%;
+    height: 180px;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+.rollbar .power{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.rollbar .power p{
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(0, 0, 0, 0.3);
+}
+.logos-container {
+    display: flex;
+    position: absolute;
+    height: 60%;
+    align-items: center;
+    gap: 80px;
+    padding: 0 40px;
+    animation: scroll 17s linear infinite;
+}
+
+/*Feedback*/
+.null1{
+    background-color: #fafafa;
+    width: 100%;
+    height: 15px;
+}
+.feedback {
+    width: 100%;
+    height: 500px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+}
+.feedback .container{
+    width: 1140px;
+    height: 100%;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.feedback .card-container {
+    width: 520px;
+    height: 70%;
+    right: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(19, 93, 127, 0.5);
+    border: 2px solid rgb(16, 117, 164);
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.feedback .card-container:hover{
+    box-shadow: 0 0 8px rgba(19, 126, 175, 0.7);
+}
+.feedback .card-container .slider {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    align-items: center;
+}
+
+
+.feedback .slide {
+    height: 100%;
+    width: 100%; /* Center slide takes more width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+    position: relative;
+}
+.feedback .slide .circle1{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: url(./Images/circle1.jpg);
+    background-position: -25px -20px;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50px;
+    top:35px;
+    border: 2px solid rgb(16, 117, 164);
+    transition: 0.5s;
+}
+.feedback .slide .circle2{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: url(./Images/circle2.jpg);
+    background-position: -30px -10px;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50px;
+    top:35px;
+    border: 2px solid rgb(16, 117, 164);
+    transition: 0.5s;
+}
+.feedback .slide .circle3{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: url(./Images/circle3.jpg);
+    background-position: -19px -5px;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50px;
+    top:35px;
+    border: 2px solid rgb(16, 117, 164);
+    transition: 0.5s;
+}
+.feedback .slide .circle4{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: url(./Images/circle4.jpg);
+    background-position: -35px -120px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50px;
+    top:35px;
+    border: 2px solid rgb(16, 117, 164);
+    transition: 0.5s;
+}
+.feedback .slide .circle5{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: url(./Images/circle5.jpg);
+    background-position: -5px -90px;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50px;
+    top:35px;
+    border: 2px solid rgb(16, 117, 164);
+    transition: 0.5s;
+}
+.feedback .slide h5{
+    position: absolute;
+    left: 37%;
+    top: 15%;
+    font-family: poppins;
+    color:#047389;
+}
+.feedback .slide h6{
+    position: absolute;
+    left: 37%;
+    top: 24%;
+    font-family: poppins;
+    font-size: 15px;
+    font-weight: 300;
+    color:#047389;
+}
+.feedback .slide .comment{
+    position: absolute;
+    width: 80%;
+    margin-bottom: -100px;
+    font-family: poppins;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 400;
+}
+.feedback .slide .client-rating{
+    position: absolute;
+    top: 30%;
+    left: 190px;
+    font-size: 22px;
+    color:#2292a3;
+}
+.feedback .container .textie {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: poppins;
+    font-size: 34px;
+    line-height: 65px;
+}
+.feedback .container .inner{
+    color:#3fafc5;
+    font-size: 55px;
+    letter-spacing: 10px;
+}
+
+
+.feedback .slide .circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover{
+    box-shadow: 0 0 8px rgba(19, 126, 175, 0.7);
+}
+.feedback .slide img{
+    width: 200px;
+}
+
+.feedback .prev-btn, 
+.feedback .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: rgb(16, 117, 164);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.feedback .prev-btn {
+    left: 2px;
+}
+
+.feedback .next-btn {
+    right: 2px;
+}
+
+.feedback .pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.feedback .pagination-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border:2px solid rgb(16, 117, 164);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.feedback .pagination-dot.active {
+    background: rgb(16, 117, 164);
+}
+
+
+/* Double the logos to create seamless loop */
+.logos-container img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-0.8%);
+    }
+    100% {
+        transform: translateX(calc(-50% - 40px)); /* Half the total width + half gap */
+    }
+}
+
+/*land 5*/
+.land5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.land5::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.land5 img{
+    position: absolute;
+    width: 1800px;
+    filter: blur(6px);
+}
+.land5 .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 20px;
+    width: 1100px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.land5 .card-container .card {
+    width: 270px;
+    height: 320px;
+    background-color:#1827277c;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #ffffff;
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.land5 .card-container .card .bx{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    font-size: 40px;
+    color: #ffffff;
+}
+.land5 .card-container .card h2{
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    font-size: 26px;
+}
+.land5 .card-container .card p{
+    position: absolute;
+    top: 220px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: 20px;
+    color: #ffffff;
+    left: 50px;
+}
+.land5 .card ul {
+    list-style: none;
+    padding-bottom: 8px;
+    position: absolute;
+    top: 133px;
+    left: 50px;
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  .land5 .card li {
+    position: relative;
+    font-size: 14px;
+  }
+  
+.land5 .card-container .card button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    right: 20px;
+    bottom: 20px;
+    transition: 0.4s;
+}
+.land5 .card-container .card .bx-right-arrow-alt{
+    position: relative;
+    top: 1px;
+    left:1px;
+    font-size: 35px;
+    transform: rotate(-45deg);
+    transition: 0.4s;
+}
+
+.land5 .card-container .card button:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+
+}
+.land5 .card-container .card .bx-right-arrow-alt:hover{
+   color: #000000;
+   transform: rotate(0deg);
+}
+
+/* When the container is hovered, shrink all cards */
+.land5 .card-container:hover .card {
+    transform: scale(0.9);
+}
+
+/* When the container is hovered, expand the specific card being hovered */
+.land5 .card-container:hover .card:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Bring hovered card to front */
+}
 
 
 /*footer*/
@@ -714,7 +1131,13 @@ footer .logo{
     margin-bottom: 4px;
     height: auto;
     cursor: pointer;
+    transition: 2s;
+    transform-style: preserve-3d;
 }
+footer .logo:hover{
+    transform: rotateY(360deg);
+}
+
 footer .row {
     width: 85%;
     margin: auto;
@@ -786,6 +1209,11 @@ footer .social-icons .bx{
     background: #ffffff;
     margin-right: 15px;
     cursor: pointer;
+    transition: 0.6s;
+}
+footer .social-icons .bx:hover{
+    color: #ffffff;
+    background: #34adc5;
 }
 footer hr{
     width: 90%;
