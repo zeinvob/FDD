@@ -468,6 +468,7 @@ nav .middle ul .home {
 
 .front{
     transform: rotateY(0deg);
+
 }
 .back{
     background-color: rgb(0, 0, 0);
@@ -476,6 +477,7 @@ nav .middle ul .home {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .flipped{
