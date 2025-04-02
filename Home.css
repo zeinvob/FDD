@@ -468,7 +468,6 @@ nav .middle ul .home {
 
 .front{
     transform: rotateY(0deg);
-
 }
 .back{
     background-color: rgb(0, 0, 0);
@@ -733,6 +732,25 @@ nav .middle ul .home {
     padding: 0 40px;
     animation: scroll 17s linear infinite;
 }
+.logos-container:hover{
+    animation-play-state: paused;
+}
+/* Double the logos to create seamless loop */
+.logos-container img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-0.8%);
+    }
+    100% {
+        transform: translateX(calc(-50% - 40px)); /* Half the total width + half gap */
+    }
+}
 
 /*Feedback*/
 .null1{
@@ -972,22 +990,7 @@ nav .middle ul .home {
 }
 
 
-/* Double the logos to create seamless loop */
-.logos-container img {
-    width: 150px;
-    height: auto;
-    object-fit: contain;
-    flex-shrink: 0;
-}
 
-@keyframes scroll {
-    0% {
-        transform: translateX(-0.8%);
-    }
-    100% {
-        transform: translateX(calc(-50% - 40px)); /* Half the total width + half gap */
-    }
-}
 
 /*land 5*/
 .land5{
