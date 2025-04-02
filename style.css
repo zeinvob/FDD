@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+.form-control {
+  background-color: slategrey;
+}
+html,
+header {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+header h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px 0;
+}
+
+header p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px 0;
+}
+#our-menu,
+footer {
+  width: 90%;
+  margin: 0 auto 30px auto;
+  padding: 10px;
+}
+
+#our-menu h2 {
+  font-family: "Lato", sans-serif;
+  padding: 10px 0 20px 0;
+}
+
+.menu-items {
+  text-align: center;
+}
+#our-menu .card {
+  border: 1px solid black;
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  display: inline-block;
+}
+
+#our-menu .card .card-img-top {
+  max-width: 100%;
+  border-radius: 10px;
+}
+#our-menu .card .card-title {
+  padding: 10px 0;
+}
+#our-menu .card .card-text {
+  padding-bottom: 10px;
+  line-height: 1.5;
+}
+#our-menu .card .price {
+  font-weight: bold;
+  font-style: italic;
+}
+#our-menu .card a {
+  display: block;
+  background-color: rgb(34, 146, 163);
+  padding: 10px 0;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* about-us section */
+#about-us p,
+footer {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 10px 0;
+}
+.btn {
+  background-color: slategrey;
+}
+
+.d-block {
+  display: block !important;
+}
