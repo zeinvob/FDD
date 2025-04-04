@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Splash Fitness</title>
-
-    <link rel="stylesheet" href="./login.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+    <link href="./About.css" type = "text/css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
@@ -33,39 +30,41 @@
                         </div>
                     </div>
                     <div class="right">
-                        <button class="signin">
-                            SIGN UP
+                        <button class="signin" onclick="window.location.href='./login.html';">
+                            LOGIN
                         </button>
                     </div>
                 </div>
             </div>
+           
         </nav>
     </section>
+    
+    <div class="land1">
+        <h1>About Us</h1>
+        <img src="./Images/About/1.jpg">
+    </div>
 
     <section>
-        <div class="login_form">
-            <div class="wrapper">
-                <form action="">
-                    <h1>Login</h1>
-                    <div class="input-box1">
-                        <input type="text" placeholder="Username" required>
-                        <i class='bx bxs-user'></i>
+        <div class="land2">
+            <div class="panel1">
+                <div>
+                    <div class="tag1">
+                        <span><i class='bx bx-dumbbell'></i></span>
+                        <h5>About Us</h5>
                     </div>
-                    <div class="input-box2">
-                        <input type="password" placeholder="Password" required>
-                        <i class='bx bxs-lock-alt' ></i>
-                    </div>
-                    <div class="remember-forgot">
-                        <label><input type="checkbox"> Remember me</label>
-                        <a href="#">Forgot password?</a>
-                    </div>
-                    <button type="submit" class="btn">LOGIN</button>
-                    <div class="register-link">
-                        <p>Don't have an account? <a href="#"> Register</a></p>
-                    </div>
-                </form>
+                </div>
+                
+                <div></div>
+            </div>
+            <div class="panel2">
+                <div class="tag1"><p>Introduction</p><br>of the Best Gym Center!</div>
+                <div class="tag2">
+                    <img src="./Images/About/2.jpg">
+                </div>
             </div>
         </div>
     </section>
+    
 </body>
 </html>
