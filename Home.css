@@ -455,6 +455,7 @@ nav .middle ul .home {
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+
 }
 .front, .back{
     position: absolute;
@@ -464,6 +465,7 @@ nav .middle ul .home {
     overflow: hidden;
     cursor: pointer;
     transition: 2s;
+    border-radius: 10px;
 }
 
 .front{
