@@ -29,6 +29,27 @@ html{
         transform: translateX(0);
     }
 }
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 890;
+    z-index: 999;
+    transition: 0.5s;
+  }
+  
+  .scrollToTopBtn:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
 nav{
     background-color: black;
     height: 95px;
