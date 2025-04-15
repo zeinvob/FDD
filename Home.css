@@ -1179,6 +1179,10 @@ footer .col{
     flex-basis: 25%;
     padding: 10px;
 }
+#links{
+    position: relative;
+    left: 40px;
+}
 footer .col:nth-child(2), .col:nth-child(3){
     flex-basis: 15%;
 }
@@ -1253,3 +1257,16 @@ footer hr{
 footer .copyright{
     text-align: center;
 }
+footer .thanks{
+    width: 300px;
+    height: 30px;
+    position: relative;
+    top:-40px;
+  }
+  footer .thanks p{
+    color:white;
+  }
+  .nolly{
+    text-decoration: none;
+    color: inherit;
+  }

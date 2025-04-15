@@ -8,6 +8,9 @@ body{
     width: 100%;
     height: 200vh;
     font-family: Poppins;
+    background-image: url(./Images/Contact/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 html{
     scroll-behavior: smooth;
@@ -251,7 +254,7 @@ nav .middle ul li:hover{
     line-height: 30px;
     letter-spacing: 1px;
   }
-  .land5 .card .nolly{
+.nolly{
     text-decoration: none;
     color: inherit;
   }
@@ -294,7 +297,305 @@ nav .middle ul li:hover{
 
 #land6{
     width: 100%;
-    height: 200px;
-    background-color: aqua;
+    height: 740px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(6, 188, 204, 0.2));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message_form{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 1100px;
+    height: 100%;
+    top:-30px;
+    justify-content: space-between;
+}
+.message_form .map{
+    width:500px;
+    height: 300px;
+    overflow: hidden;
+    background-color: rgb(0,0,0 , 0.2);
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgb(0,0,0 , 0.9);
+    opacity: 0.85;
+}
+
+.message_form .wrapper{
+    width: 520px;
+    height: 71%;
+    background-color: rgb(0,0,0 , 0.2);
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgb(0,0,0 , 0.9);
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box1, .input-box2, .input-box3{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box1 input, .input-box2 input, .input-box3 input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 22px 46px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #ffffff;
+}
+.input-box1, .input-box2, .input-box3{
     position: relative;
 }
+.input-box1 i{
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-box2 i{
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-box3 i{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#messageBox {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: Poppins;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    resize: none;
+    overflow: hidden;
+  }
+
+.wrapper .submit-line{
+    display: flex;
+}
+.wrapper .btn{
+    width: 40%;
+    height: 42px;
+    font-size: 17px;
+    font-weight: 500;
+    background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
+    border:none;
+    color: white;
+    transition: .7s;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    padding-top: 3px;
+    position: relative;
+    right: -260px;
+    top:-10px;
+    animation: change 7s infinite;
+    background-size: 200% 200%;
+}
+
+.wrapper .btn:hover{
+    background: linear-gradient(to right,#ffffff, #ffffff);
+    cursor: pointer;
+    color:#04a4c4;
+    letter-spacing: 5px;
+    padding-left: 7px;
+    font-size: 18px;
+    font-weight: 600;
+    background-size: 200% 200%;
+}
+
+.wrapper .faq{
+    font-size: 14.5px;
+    text-align: center;
+    position: relative;
+    right: 170px;
+}
+
+.faq a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.faq a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/*footer*/
+footer{
+    width: 100%;
+    color: #ffffff;
+    padding: 50px 0 20px;
+    background: linear-gradient(60deg, #000000, #0a1c25, #000000);
+    background-size: 200% 200%;
+    animation: change 7s infinite;
+    font-family: poppins;
+}
+footer .logo{
+    width: 80%;
+    padding-top: 20%;
+    margin-bottom: 4px;
+    height: auto;
+    cursor: pointer;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+footer .logo:hover{
+    transform: rotateY(360deg);
+}
+
+footer .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+footer .col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+#links{
+    position: relative;
+    left: 40px;
+}
+footer .col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+footer .col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+footer .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ffffff;
+    margin: 20px 0;
+}
+footer .row .col ul li{
+    list-style: none;
+    margin-bottom: 11px;
+}
+footer .row .col ul a{
+    text-decoration: none;
+    color: #ffffff;
+}
+footer form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 50px;
+}
+footer .bx{
+    font-size: 18px;
+    margin-right: 10px;
+}
+footer form input{
+    width: 100%;
+    background-color: transparent;
+    color: #ffffff;
+    border: 0;
+    outline: none;
+}
+footer form button{
+    background: transparent;
+    color: #ffffff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+footer .social-icons .bx{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    color: #000000;
+    background: #ffffff;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.6s;
+    position: relative;
+    top:-30px;
+}
+footer .social-icons .bx:hover{
+    color: #ffffff;
+    background: #34adc5;
+}
+footer hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    margin: 20px auto;
+}
+footer .copyright{
+    text-align: center;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    padding: 30px;
+    display: none;
+    z-index: 1001;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.427);
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgb(0,0,0 , 0.9);
+  }
+  .blur {
+    filter: blur(5px);
+  }
+
+  footer .thanks{
+    width: 300px;
+    height: 30px;
+    position: relative;
+    top:-40px;
+  }
+  footer .thanks p{
+    color:white;
+  }

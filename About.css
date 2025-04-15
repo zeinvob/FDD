@@ -438,7 +438,6 @@ nav .middle ul li:hover{
     top: -50px;
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 .land5 .image img{
     position: absolute;
@@ -715,6 +714,10 @@ footer .row .col ul a{
     text-decoration: none;
     color: #ffffff;
 }
+#links{
+    position: relative;
+    left: 40px;
+}
 footer form{
     padding-bottom: 15px;
     display: flex;
@@ -768,3 +771,16 @@ footer hr{
 footer .copyright{
     text-align: center;
 }
+footer .thanks{
+    width: 300px;
+    height: 30px;
+    position: relative;
+    top:-40px;
+  }
+  footer .thanks p{
+    color:white;
+  }
+  .nolly{
+    text-decoration: none;
+    color: inherit;
+  }

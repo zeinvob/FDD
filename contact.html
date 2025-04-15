@@ -6,12 +6,13 @@
     <title>Contact</title>
     <link rel="icon" type="image/png" href="./Images/title_icon-04.png">
     <link href="./contact.css" type = "text/css" rel="stylesheet">
+    <script src="./contact.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <section>
-        <nav>
+        <nav id="nav">
             <div class="container">
                 <div class="nav_wrapper">
                     <div class="left">
@@ -41,18 +42,16 @@
         </nav>
     </section>
 
-       
-
     <button class="scrollToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
         <i class='bx bx-up-arrow-alt'></i>
     </button>
 
     <section>
-        <div class="land5">
+        <div class="land5" id="land5">
             <div class="land1">
                 <h1>CONTACT US</h1>
             </div>
-            <img src="./Images/Contact/2.jpg">
+            
             <div class="card-container arrival">
                 <div class="card">
                     <i class='bx bxs-phone-call'></i>
@@ -78,7 +77,7 @@
                     <h2>LOCATION</h2>
                     <ul>
                         <li>Address:</li>
-                        <li><a href="https://maps.app.goo.gl/3rHVtaUX1z4BDh7L7" class="nolly">
+                        <li><a href="https://maps.app.goo.gl/3rHVtaUX1z4BDh7L7" target="_blank" class="nolly">
                             <b>⚲ Retail Park, Regent<br>Rd
                             Salford M5 3TP, Manchester, UK</b></a>
                         </li>
@@ -89,7 +88,85 @@
     </section>
 
     <section>
-        <div id="land6"></div>
+        <div id="land6" class="">
+            <div class="message_form">
+                <div class="wrapper">
+                    <form action="" method="get" onsubmit="return handleSubmit(event)">
+                        <h1>Message Us</h1>
+                        <div class="input-box1">
+                            <input type="name" placeholder="Name" required>
+                            <i class='bx bxs-user'></i>
+                        </div>
+                        <div class="input-box2">
+                            <input type="email" placeholder="Email" required>
+                            <i class='bx bxs-envelope' ></i>  
+                        </div>
+                        <div class="input-box3">
+                            <textarea id="messageBox" placeholder="Type your message here" required></textarea>
+                        </div>
+                        <br><br><br>
+                        <div class="submit-line">
+                            <button type="submit" class="btn"><i class='bx bx-paper-plane'></i> SEND</button>
+                            <div class="faq">
+                                <p>Don't have an question? <a href="./faq.html"> FAQ</a></p>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.2811016360417!2d-2.26569681706685!3d53.47803977732129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1e01957925f%3A0x2ebc41817dd00176!2sRegent%20Retail%20Park!5e0!3m2!1sen!2smy!4v1744735650009!5m2!1sen!2smy" width="500" height="300" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+        <p id="popupText"></p>
+    </div>
+
+    <section>
+        <footer id="footer">
+            <div class="row">
+                <div class="col">
+                    <img src="./Images/logo-01.png"  class="logo" onclick="window.location.href='./Home.css';">
+                    <p style="font-size: 15px;">Bring you potential to build up body.</p>
+                </div>
+                <div class="col">
+                    <h3>Gym Center Address</h3>
+                    <p><a href="https://maps.app.goo.gl/3rHVtaUX1z4BDh7L7" target="_blank" class="nolly">Retail Park, Regent Rd<br>
+                        Salford M5 3TP, Manchester, UK</a></p>
+                    <p class="email-id"><a href="mailto:splashfitness@mail.com" class="nolly">splashfitness@gym.com</a></p>
+                    <h4><a href="tel:+44 0123 2322" class="nolly">+44 0123 2322</a></h4>
+                </div>
+                <div class="col" id="links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./About.html">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Newsletter</h3>
+                    <form action="" method="get" onsubmit="return newsletter(event)">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+                    </form>
+                    <div class="thanks"><p id="mess"></p></div>
+                    <div class="social-icons">
+                        <i class='bx bxl-facebook-circle' ></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram-alt' ></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Splash Fitness &copy; 2025 - All rights reserved.</p>
+        </footer>
     </section>
 
 </body>

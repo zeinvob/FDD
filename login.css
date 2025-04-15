@@ -183,6 +183,7 @@ nav .middle ul li:hover{
     right: 6%;
     top: 50%;
     transform: translateY(-50%);
+    display: block;
 }
 
 .wrapper .remember-forgot{
@@ -245,3 +246,62 @@ nav .middle ul li:hover{
 .register-link a:hover{
     text-decoration: underline;
 }
+
+.forgot_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 28%;
+    right: 50%;
+    transform: translateX(50%);
+    position: absolute;
+    display: none;
+}
+
+.forgot_form .wrapper{
+    width: 420px;
+    background-color: rgb(0,0,0 , 0.2);
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgb(0,0,0 , 0.9);
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    padding: 30px;
+    display: none;
+    z-index: 1001;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.427);
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgb(0,0,0 , 0.9);
+  }
+#toggleEye{
+    display: none;
+    cursor: pointer;
+}
+.blur {
+    filter: blur(5px);
+  }
+
+#mess{
+    color:white;
+    position: relative;
+    left: 20px;
+    top: -20px;
+  }
+
+  a{
+    cursor: pointer;
+  }

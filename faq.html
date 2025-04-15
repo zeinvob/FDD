@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 40px;
+    }
+
+    .faq-container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .faq-container h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .faq-question:hover {
+      background-color: #e6e6e6;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 15px;
+    }
+
+    input[type="checkbox"]:checked ~ .faq-answer {
+      max-height: 200px;
+      padding: 10px 15px;
+    }
+
+    .faq-answer p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<div class="faq-container">
+  <h1>Frequently Asked Questions</h1>
+
+  <div class="faq-item">
+    <input type="checkbox" id="faq1">
+    <label class="faq-question" for="faq1">What is Splash Fitness?</label>
+    <div class="faq-answer">
+      <p>Splash Fitness is a modern gym offering personalized workout plans, fitness classes, and professional trainers to help you reach your goals.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="faq2">
+    <label class="faq-question" for="faq2">What are your operating hours?</label>
+    <div class="faq-answer">
+      <p>We are open Monday to Saturday from 6:00 AM to 10:00 PM. Closed on Sundays and public holidays.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="faq3">
+    <label class="faq-question" for="faq3">Do you offer personal training?</label>
+    <div class="faq-answer">
+      <p>Yes! Our certified personal trainers can design custom programs and guide you through your fitness journey one-on-one.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

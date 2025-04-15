@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="icon" type="image/png" href="./Images/title_icon-04.png">
+    <script src="./contact.js"></script>
     <link href="./About.css" type = "text/css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -104,7 +105,7 @@
     
     <section>
         <div class="ceo">
-            <h2>Meet our Inspiring <strong>Executives</strong>...</h2>
+            <h2>Meet our Inspiring <strong>Executives</strong></h2>
         </div>
         <div class="land5">
             <span class="image">
@@ -169,36 +170,37 @@
     </section>
     
     <section>
-        <footer>
+        <footer id="footer">
             <div class="row">
                 <div class="col">
                     <img src="./Images/logo-01.png"  class="logo" onclick="window.location.href='#';">
                     <p style="font-size: 15px;">Bring you potential to build up body.</p>
                 </div>
                 <div class="col">
-                    <h3>Gym Center Address</h3>
-                    <p>Retail Park, Regent Rd</p>
-                    <p>Salford M5 3TP, Manchester, UK</p>
-                    <p class="email-id">splashfitness@gym.com</p>
-                    <h4>+44 0123 2322</h4>
+                    <h3 >Gym Center Address</h3>
+                    <p><a href="https://maps.app.goo.gl/3rHVtaUX1z4BDh7L7" target="_blank" class="nolly">Retail Park, Regent Rd<br>
+                        Salford M5 3TP, Manchester, UK</a></p>
+                    <p class="email-id"><a href="mailto:splashfitness@mail.com" class="nolly">splashfitness@gym.com</a></p>
+                    <h4><a href="tel:+44 0123 2322" class="nolly">+44 0123 2322</a></h4>
                 </div>
-                <div class="col">
+                <div class="col" id="links">
                     <h3>Links</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./About.html">About</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h3>Newsletter</h3>
-                    <form>
+                    <form action="" method="get" onsubmit="return newsletter(event)">
                         <i class='bx bxs-envelope'></i>
                         <input type="email" placeholder="Enter your email" required>
                         <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
                     </form>
+                    <div class="thanks"><p id="mess"></p></div>
                     <div class="social-icons">
                         <i class='bx bxl-facebook-circle' ></i>
                         <i class='bx bxl-twitter' ></i>
@@ -209,6 +211,7 @@
             <hr>
             <p class="copyright">Splash Fitness &copy; 2025 - All rights reserved.</p>
         </footer>
-       </section>
+    </section>
+
 </body>
 </html>
