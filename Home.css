@@ -1160,11 +1160,10 @@ footer .logo{
     margin-bottom: 4px;
     height: auto;
     cursor: pointer;
-    transition: 2s;
-    transform-style: preserve-3d;
+    transition: 1s;
 }
 footer .logo:hover{
-    transform: rotateY(360deg);
+    transform: scale(1.05);
 }
 
 footer .row {

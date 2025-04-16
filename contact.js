@@ -3,10 +3,6 @@ function handleSubmit(event)
     event.preventDefault(); // stop form from submitting
   
     const form = event.target;
-    const name = form.querySelector('input[placeholder="Name"]');
-    const email = form.querySelector('input[type="email"]');
-    const message = form.querySelector('#messageBox');
-  
   
     // blur the form container
     document.getElementById("land6").classList.add("blur");

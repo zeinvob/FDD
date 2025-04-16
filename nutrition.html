@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./nutrition.css">
+  <title>FAQ Page</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./Images/title_icon-04.png">
+  <script src="./contact.js"></script>
+  <script src="./nutrition.js"></script>
+</head>
+<body>
+  <div class="bg"><img src="./Images/Nutrition/n1.jpg"></div>
+  <section>
+        <nav id="nav">
+            <div class="container">
+                <div class="nav_wrapper">
+                    <div class="left">
+                        <a href ="#">
+                            <img src="./Images/logo-02.png" width="250px" onclick="window.location.href='./index.html';">
+                        </a>
+                    </div>
+                    <div class="middle">
+                        <div class="bar">
+                            <ul>
+                                <a href = "./index.html"><li class="home">Home</li></a>
+                                <a href = "./About.html"><li>About</li></a>
+                                <a href = "#"><li>Blog</li></a>
+                                <a href = "#"><li>Packages</li></a>
+                                <a href = "./contact.html"><li>Contact</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button class="signin" onclick="window.location.href='./login.html';">
+                            LOGIN
+                        </button>
+                    </div>
+                </div>
+            </div>
+           
+        </nav>
+    </section>
+
+    <section>
+        <div class="article-nav">
+            <div class="article-nav-container">
+              <a href="#article1">Macronutrients</a>
+              <a href="#article2">Superfoods</a>
+              <a href="#article3">Hydration</a>
+              <a href="#article4">Meal Timing</a>
+              <a href="#article5">Sustainable Habits</a>
+            </div>
+          </div>
+    </section>
+
+  <section class="nutrition-articles">
+
+    <div class="container">
+      <h2 class="section-title">Fuel Your Fitness: &nbsp;<div>Nutrition Insights for a Stronger You</div></h2>
+  
+      <!-- Article 1 -->
+      <div class="nutrition-block row reverse" id="article1">
+        <div class="text">
+          <h3>1. The Role of Macronutrients in Muscle Building</h3>
+          <p>Protein, carbohydrates, and fats form the foundation of muscle development. Protein supports muscle repair, carbs fuel your workouts, and healthy fats maintain hormonal balance. A smart macronutrient plan helps you get the most from every session at Splash Fitness.</p>
+        </div>
+        <div class="image">
+          <img src="./Images/Nutrition/n2.jpg" alt="Macronutrients" />
+        </div>
+      </div>
+  
+      <!-- Article 2 -->
+      <div class="nutrition-block row" id="article2">
+        <div class="text">
+          <h3>2. Superfoods That Boost Recovery and Energy</h3>
+          <p>Incorporate nutrient-dense superfoods like berries, leafy greens, salmon, and chia seeds to enhance your post-workout recovery. These foods reduce inflammation, support energy, and keep your body resilient between intense sessions.</p>
+        </div>
+        <div class="image">
+          <img src="./Images/Nutrition/n3.jpg" alt="Superfoods" />
+        </div>
+      </div>
+  
+      <!-- Article 3 -->
+      <div class="nutrition-block row reverse" id="article3">
+        <div class="text">
+          <h3>3. Hydration and Electrolytes: More Than Just Water</h3>
+          <p>Hydration fuels performance. Water is key, but electrolytes are equally important—especially after sweat-heavy workouts. Replenish with coconut water, bananas, and magnesium-rich foods to avoid cramps and maintain fluid balance.</p>
+        </div>
+        <div class="image">
+          <img src="./Images/Nutrition/n4.jpg" alt="Hydration" />
+        </div>
+      </div>
+  
+      <!-- Article 4 -->
+      <div class="nutrition-block row" id="article4">
+        <div class="text">
+          <h3>4. Meal Timing and Pre/Post-Workout Nutrition</h3>
+          <p>Fuel your body strategically. Eat a balanced snack 30–60 minutes before exercise, and follow up with protein and carbs afterward. Timing matters—proper meals around your workout optimize energy, strength, and recovery.</p>
+        </div>
+        <div class="image">
+          <img src="./Images/Nutrition/n5.jpg" alt="Meal Timing" />
+        </div>
+      </div>
+  
+      <!-- Article 5 -->
+      <div class="nutrition-block row reverse" id="article5">
+        <div class="text">
+          <h3>5. Long-Term Nutrition Habits for Sustainable Fitness</h3>
+          <p>Sustainability beats short-term fixes. Plan ahead, eat whole foods, and stay consistent. Combine mindful eating with your gym routine for a stronger, healthier body—inside and out.</p>
+        </div>
+        <div class="image">
+          <img src="./Images/Nutrition/n6.jpg" alt="Sustainable Nutrition" />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="start">
+        <button id="startquiz"onclick="openQuiz()">Start Quiz</button>
+    </div>
+    <div>
+        <div class="quiz-container">
+            <div class="close"><button onclick="closeQuiz()">X</button></div>
+            <h1>Fitness & Nutrition Quiz</h1>
+            <br>
+            <form id="quiz-form">
+          
+              <div class="question">
+                <p>1. Which macronutrient is primarily responsible for muscle repair?</p>
+                <label><input type="radio" name="q1" value="a"> Carbohydrates <br></label>
+                <label><input type="radio" name="q1" value="b"> Fats <br></label>
+                <label><input type="radio" name="q1" value="c"> Protein <br></label>
+                <label><input type="radio" name="q1" value="d"> Vitamins <br></label>
+              </div>
+          
+              <div class="question">
+                <p>2. Which of the following is a superfood that helps reduce inflammation?</p>
+                <label><input type="radio" name="q2" value="a"> White bread <br></label>
+                <label><input type="radio" name="q2" value="b"> Berries <br></label>
+                <label><input type="radio" name="q2" value="c"> Soda <br></label>
+                <label><input type="radio" name="q2" value="d"> Processed meat <br></label>
+              </div>
+          
+              <div class="question">
+                <p>3. What helps maintain fluid balance during and after intense workouts?</p>
+                <label><input type="radio" name="q3" value="a"> Fiber <br></label>
+                <label><input type="radio" name="q3" value="b"> Protein <br></label>
+                <label><input type="radio" name="q3" value="c"> Electrolytes <br></label>
+                <label><input type="radio" name="q3" value="d"> Sugar <br></label>
+              </div>
+          
+              <div class="question">
+                <p>4. What is the best time to eat a balanced snack before exercising?</p>
+                <label><input type="radio" name="q4" value="a"> 30–60 minutes before exercise <br></label>
+                <label><input type="radio" name="q4" value="b"> Right after exercise <br></label>
+                <label><input type="radio" name="q4" value="c"> 2 hours after exercise <br></label>
+                <label><input type="radio" name="q4" value="d"> Only in the morning <br></label>
+              </div>
+          
+              <div class="question">
+                <p>5. Which food is a good source of magnesium and helps prevent muscle cramps?</p>
+                <label><input type="radio" name="q5" value="a"> Candy <br></label>
+                <label><input type="radio" name="q5" value="b"> Chips <br></label>
+                <label><input type="radio" name="q5" value="c"> Ice cream <br></label>
+                <label><input type="radio" name="q5" value="d"> Bananas <br></label>
+              </div>
+          
+              <div class="question">
+                <p>6. What is key for sustainable long-term fitness success?</p>
+                <label><input type="radio" name="q6" value="a"> Skipping meals <br></label>
+                <label><input type="radio" name="q6" value="b"> Quick-fix diets <br></label>
+                <label><input type="radio" name="q6" value="c"> Eating whole foods consistently <br></label>
+                <label><input type="radio" name="q6" value="d"> Extreme fasting <br></label>
+              </div>
+          
+            </form>
+            <br>
+            <div class="submit"><button id="submit" onclick="submit()">Submit</button></div>
+        </div>
+    </div>
+  </section>
+
+  <div class="popup" id="popup">
+    <p id="popupText">Submitting..</p>
+  </div>
+
+  <button class="scrollToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+    <i class='bx bx-up-arrow-alt'></i>
+</button>
+
+  <section>
+    <br><br><br><br>
+    <footer id="footer">
+        <div class="row">
+            <div class="col">
+                <img src="./Images/logo-01.png"  class="logo" onclick="window.location.href='./index.html';">
+                <p style="font-size: 15px;">Bring you potential to build up body.</p>
+            </div>
+            <div class="col">
+                <h3>Gym Center Address</h3>
+                <p><a href="https://maps.app.goo.gl/3rHVtaUX1z4BDh7L7" target="_blank" class="nolly">Retail Park, Regent Rd<br>
+                    Salford M5 3TP, Manchester, UK</a></p>
+                <p class="email-id"><a href="mailto:splashfitness@mail.com" class="nolly">splashfitness@gym.com</a></p>
+                <h4><a href="tel:+44 0123 2322" class="nolly">+44 0123 2322</a></h4>
+            </div>
+            <div class="col" id="links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./nutrition.html">Nutrition & Fitness</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter</h3>
+                <form action="" method="get" onsubmit="return newsletter(event)">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+                </form>
+                <div class="thanks"><p id="mess"></p></div>
+                <div class="social-icons">
+                    <i class='bx bxl-facebook-circle' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-instagram-alt' ></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Splash Fitness &copy; 2025 - All rights reserved.</p>
+    </footer>
+</section>
+
+</body>
+</html>

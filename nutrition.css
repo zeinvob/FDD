@@ -13,26 +13,19 @@ html{
 .bg{
     position: absolute;
     width: 100%;
-    height: 1200px;
+    height: 2600px;
     overflow: hidden;
     z-index: -1;
+    display: block;
 }
 .bg img{
-    width: 2400px;
+    width: 2000px;
     opacity: 0.6;
     position: relative;
     right: 200px;
+    top: -100px;
 }
-.bg::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
-    z-index: 1;
-}
+
 .scrollToTopBtn {
     position: fixed;
     bottom: 30px;
@@ -54,6 +47,7 @@ html{
     background-color: #ffffff;
     color: #000000;
   }
+
 nav{
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -162,109 +156,142 @@ nav .middle ul li:hover{
       }
 }
 
-
-.faq-container {
-  max-width: 800px;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.219);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  box-shadow: 4px 4px 15px rgb(33, 33, 33);
-  animation: shadow_tag2 7s infinite;
-}
-@keyframes shadow_tag2{
-  0%{
-      box-shadow: 4px 4px 15px rgb(69, 69, 69);
-  }
-  25%{
-      box-shadow: 4px -4px 15px rgb(69, 69, 69);
-  }
-  50%{
-      box-shadow: -4px -4px 15px rgb(65, 65, 65);
-  }
-  75%{
-      box-shadow: -4px 4px 15px rgb(90, 90, 90);
-  }
-  100%{
-      box-shadow: 4px 4px 15px rgb(88, 88, 88);
-  }
-}
-
-.faq-container h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: white;
-  padding-top: 20px;
-  font-size: 40px;
-}
-
-.faq-item {
-  border-bottom: 1px solid #ffffff3a;
-  margin-bottom: 20px;
-}
-
-.faq-question {
-  display: block;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 15px;
-  background-color: #0000005f;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  color: white;
-}
-
-.faq-question:hover {
-  background-color: #e6e6e6;
-  color: #000;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-.faq-question{
-    display: flex;
-    justify-content: space-between;
-}
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition:  0.3s ease;
-  padding: 0 15px;
-}
-
-input[type="checkbox"]:checked ~ .faq-answer {
-  max-height: 200px;
-  padding: 10px 15px;
-  transition: 0.5s;
-}
-
-.faq-question .arrow-up {
-    display: none;
-}
-  
-input[type="checkbox"]:checked ~ .faq-question .arrow-up {
+.article-nav {
+    background: #ffffff0c;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 15px 0;
+    position: relative;
+    top: 100px; /* adjust if your nav height is different */
+    z-index: 99;
+    width: 100%;
     display: block;
-}
+  }
   
-input[type="checkbox"]:checked ~ .faq-question .arrow-down {
-    display: none;
-}
-input[type="checkbox"]:checked ~ .bg {
-    height: 1500px;
-}
+  .article-nav-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .article-nav-container a {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s, color 0.3s;
+  }
+  
+  .article-nav-container a:hover {
+    background: #e0f2f1;
+    color: #004d40;
+  }
+  
 
-.faq-answer p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  color: white;
-}
+.nutrition-articles {
+    padding: 70px 20px;
+    margin-top: 100px;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+  }
+  
+  .nutrition-articles .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .section-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+  }
+  .section-title div{
+    color: #01e4d9;
+  }
+  
+  .nutrition-block {
+    background: #0e0e0e94;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin-bottom: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    backdrop-filter: blur(20px);
+  }
+  
+  .row {
+    flex-direction: row;
+  }
+  
+  .row.reverse {
+    flex-direction: row-reverse;
+  }
+  .nutrition-block .text{
+    width: 500px;
+    position: relative;
+    left: 40px;
+    padding: 30px;
+  }
+  .reverse .text{
+    width: 500px;
+    position: relative;
+    left: -40px;
+    padding: 30px;
+  }
+
+  .nutrition-block .image {
+    flex: 1 1 10%;
+    padding: 30px;
+    position: relative;
+    left: 45px;
+  }
+  .reverse .image {
+    flex: 1 1 10%;
+    padding: 30px;
+    position: relative;
+    left: 0;
+  }
+  .nutrition-block .text h3 {
+    font-size: 24px;
+    color:#00c4ba;
+    margin-bottom: 20px;
+  }
+  
+  .nutrition-block .text p {
+    font-size: 16.5px;
+    color: #ffffff;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  
+  .nutrition-block .image img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nutrition-block {
+      flex-direction: column !important;
+    }
+    .nutrition-block .text, .nutrition-block .image {
+      flex: 1 1 100%;
+      padding: 20px;
+    }
+  }
+  
 
 /*footer*/
 footer{
@@ -400,8 +427,21 @@ footer .copyright{
     box-shadow: 0 0 20px rgb(0,0,0 , 0.9);
   }
   .blur {
-    filter: blur(5px);
+    filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.457);
+    position: relative;
   }
+
+.blur::after {
+    content:"";
+    position: absolute; /* Position it over the blurred content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black shade with opacity */
+    pointer-events: none; /* Allow interaction with content below if needed */
+}
 
   footer .thanks{
     width: 300px;
@@ -417,3 +457,91 @@ footer .copyright{
     text-decoration: none;
     color: inherit;
   }
+
+.start{
+    display: flex;
+    justify-content: center;
+}
+.start button{
+    width: 150px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    background: linear-gradient(60deg, #1D4F57, #34adc5, #1D4F57);
+    border: 2px solid #04a4c4;
+    color: white;
+    border-radius: 5px;
+    transition: .5s;
+    letter-spacing: 1px;
+    animation: change 7s infinite;
+    background-size: 200% 200%;
+  }
+.start button:hover{
+    background: linear-gradient(to right,#ffffff, #ffffff);
+    cursor: pointer;
+    transform: scale(1.1);
+    color:#008897;
+}
+.quiz-container{
+    width: 1120px;
+    height: 1130px;
+    background-color: #05252087;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    background-clip: blur(20px);
+    top: 100px;
+    color: white;
+    letter-spacing: 1px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.915);
+    margin-bottom: 70px;
+    display: none;
+    position: relative;
+}
+ .quiz-container .close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.close button{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+.quiz-container h1{
+    text-align: center;
+    padding: 40px 0 29px 0;
+    font-size: 40px;
+}
+.quiz-container .question{
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+.quiz-container label{
+    padding-left: 20px;
+}
+.quiz-container .submit{
+    position: relative;
+    top: 1%;
+}
+.quiz-container .submit button{
+    margin: 0 45%;
+    width: 120px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: white;
+    border: 2px solid #000000;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: block;
+}

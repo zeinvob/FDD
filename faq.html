@@ -3,105 +3,197 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./faq.css">
   <title>FAQ Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      padding: 40px;
-    }
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./Images/title_icon-04.png">
+  <script src="./contact.js"></script>
+  <script>
+    function expand(checkbox)
+    {
+      const div = document.querySelector('.bg');
+      
+      let currHeight = parseInt(window.getComputedStyle(div).height, 10);
 
-    .faq-container {
-      max-width: 700px;
-      margin: auto;
-      background: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      if(checkbox.checked)
+      {
+        div.style.height = (currHeight + 35) + "px";
+      }
+      else
+      {
+        div.style.height = "1200px";
+      }
     }
-
-    .faq-container h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid #ddd;
-      margin-bottom: 10px;
-    }
-
-    .faq-item:last-child {
-      border-bottom: none;
-    }
-
-    .faq-question {
-      display: block;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 15px;
-      background-color: #f9f9f9;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-
-    .faq-question:hover {
-      background-color: #e6e6e6;
-    }
-
-    input[type="checkbox"] {
-      display: none;
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-      padding: 0 15px;
-    }
-
-    input[type="checkbox"]:checked ~ .faq-answer {
-      max-height: 200px;
-      padding: 10px 15px;
-    }
-
-    .faq-answer p {
-      margin: 0;
-      font-size: 16px;
-      line-height: 1.5;
-    }
-  </style>
+  </script>
 </head>
 <body>
+  <div class="bg"><img src="./Images/FAQ/faq.jpg"></div>
+  <section>
+        <nav id="nav">
+            <div class="container">
+                <div class="nav_wrapper">
+                    <div class="left">
+                        <a href ="#">
+                            <img src="./Images/logo-02.png" width="250px" onclick="window.location.href='./index.html';">
+                        </a>
+                    </div>
+                    <div class="middle">
+                        <div class="bar">
+                            <ul>
+                                <a href = "./index.html"><li class="home">Home</li></a>
+                                <a href = "./About.html"><li>About</li></a>
+                                <a href = "#"><li>Blog</li></a>
+                                <a href = "#"><li>Packages</li></a>
+                                <a href = "./contact.html"><li>Contact</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button class="signin" onclick="window.location.href='./login.html';">
+                            LOGIN
+                        </button>
+                    </div>
+                </div>
+            </div>
+           
+        </nav>
+  </section>
 
-<div class="faq-container">
-  <h1>Frequently Asked Questions</h1>
+  <button class="scrollToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+    <i class='bx bx-up-arrow-alt'></i>
+  </button>
+  
+  <br><br><br><br><br><br><br>
+  <section>
+    <div class="faq-container">
+      <h1>Frequently Asked Questions</h1>
+    
+      <div class="faq-item">
+        <input type="checkbox" id="faq1" onchange="expand(this)">
+        <label class="faq-question" for="faq1">1. What is Splash Fitness?
+          <i class='bx bx-chevron-down arrow-down'></i>
+          <i class='bx bx-chevron-up arrow-up'></i></i>
+        </label>
+        <div class="faq-answer">
+          <p>- Splash Fitness is a modern gym offering personalized workout plans, fitness classes, and professional trainers to help you reach your goals.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <input type="checkbox" id="faq2" onchange="expand(this)">
+        <label class="faq-question" for="faq2">2. What are your operating hours?
+          <i class='bx bx-chevron-down arrow-down'></i>
+          <i class='bx bx-chevron-up arrow-up'></i></i>
+        </label>
+        <div class="faq-answer">
+          <p>- We are open Monday to Saturday from 6:00 AM to 10:00 PM. Closed on Sundays and public holidays.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <input type="checkbox" id="faq3" onchange="expand(this)">
+        <label class="faq-question" for="faq3">3. Do you offer personal training?
+          <i class='bx bx-chevron-down arrow-down'></i>
+          <i class='bx bx-chevron-up arrow-up'></i></i>
+        </label>
+        <div class="faq-answer">
+          <p>- Yes! Our certified personal trainers can design custom programs and guide you through your fitness journey one-on-one.</p>
+        </div>
+      </div>
 
-  <div class="faq-item">
-    <input type="checkbox" id="faq1">
-    <label class="faq-question" for="faq1">What is Splash Fitness?</label>
-    <div class="faq-answer">
-      <p>Splash Fitness is a modern gym offering personalized workout plans, fitness classes, and professional trainers to help you reach your goals.</p>
+      <div class="faq-item">
+        <input type="checkbox" id="faq4" onchange="expand(this)">
+        <label class="faq-question" for="faq4">4. What should I bring for my first visit?
+          <i class='bx bx-chevron-down arrow-down'></i>
+          <i class='bx bx-chevron-up arrow-up'></i>
+        </label>
+        <div class="faq-answer">
+          <p>- Bring a water bottle, a towel, proper workout attire, and a positive mindset! If you're doing a trial, don't forget a valid ID.</p>
+        </div>
+      </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq5" onchange="expand(this)">
+      <label class="faq-question" for="faq5">5. Are group classes included in the membership?
+        <i class='bx bx-chevron-down arrow-down'></i>
+        <i class='bx bx-chevron-up arrow-up'></i>
+      </label>
+      <div class="faq-answer">
+        <p>- Yes, group fitness classes like yoga, HIIT, and Zumba are included in most membership plans. Check with our front desk for your plan details.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="faq-item">
-    <input type="checkbox" id="faq2">
-    <label class="faq-question" for="faq2">What are your operating hours?</label>
-    <div class="faq-answer">
-      <p>We are open Monday to Saturday from 6:00 AM to 10:00 PM. Closed on Sundays and public holidays.</p>
+    <div class="faq-item">
+      <input type="checkbox" id="faq6" onchange="expand(this)">
+      <label class="faq-question" for="faq6">6. Can I pause or freeze my membership?
+        <i class='bx bx-chevron-down arrow-down'></i>
+        <i class='bx bx-chevron-up arrow-up'></i>
+      </label>
+      <div class="faq-answer">
+        <p>- Yes, we allow membership freezes for medical or travel reasons. Contact our support team to request a freeze.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="faq-item">
-    <input type="checkbox" id="faq3">
-    <label class="faq-question" for="faq3">Do you offer personal training?</label>
-    <div class="faq-answer">
-      <p>Yes! Our certified personal trainers can design custom programs and guide you through your fitness journey one-on-one.</p>
+    <div class="faq-item">
+      <input type="checkbox" id="faq7" onchange="expand(this)">
+      <label class="faq-question" for="faq7">8. What payment methods do you accept?
+        <i class='bx bx-chevron-down arrow-down'></i>
+        <i class='bx bx-chevron-up arrow-up'></i>
+      </label>
+      <div class="faq-answer">
+        <p>- We accept credit/debit cards, mobile banking, and cash payments at the front desk.</p>
+      </div>
     </div>
-  </div>
 
-</div>
+  </div>
+  </section>
+
+  <section>
+    <br><br><br><br>
+    <footer id="footer">
+        <div class="row">
+            <div class="col">
+                <img src="./Images/logo-01.png"  class="logo" onclick="window.location.href='./index.html';">
+                <p style="font-size: 15px;">Bring you potential to build up body.</p>
+            </div>
+            <div class="col">
+                <h3>Gym Center Address</h3>
+                <p><a href="https://maps.app.goo.gl/3rHVtaUX1z4BDh7L7" target="_blank" class="nolly">Retail Park, Regent Rd<br>
+                    Salford M5 3TP, Manchester, UK</a></p>
+                <p class="email-id"><a href="mailto:splashfitness@mail.com" class="nolly">splashfitness@gym.com</a></p>
+                <h4><a href="tel:+44 0123 2322" class="nolly">+44 0123 2322</a></h4>
+            </div>
+            <div class="col" id="links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./nutrition.html">Nutrition & Fitness</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter</h3>
+                <form action="" method="get" onsubmit="return newsletter(event)">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+                </form>
+                <div class="thanks"><p id="mess"></p></div>
+                <div class="social-icons">
+                    <i class='bx bxl-facebook-circle' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-instagram-alt' ></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Splash Fitness &copy; 2025 - All rights reserved.</p>
+    </footer>
+</section>
 
 </body>
 </html>
