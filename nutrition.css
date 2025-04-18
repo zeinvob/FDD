@@ -561,3 +561,27 @@ footer .copyright{
     cursor: pointer;
     display: block;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  
+  nav .middle ul li {
+    padding-left: 15px;
+    font-size: 14px;
+  }
+  
+  .product {
+    width: 100%;
+  }
+  
+  footer .col {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #links {
+    left: 0;
+  }
+}

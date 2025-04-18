@@ -10,8 +10,6 @@
   <link rel="stylesheet" type="text/css" href="./order.css">
 </head>
 <body>
-  <div class="bg"><img src="./Images/Nutrition/n1.jpg" alt="background"></div>
-  
   <section>
     <nav id="nav">
       <div class="container">
@@ -45,7 +43,19 @@
   <section class="protein-shop">
     <div class="container">
       <h2 class="section-title">Protein Shakes: &nbsp;<div>Fuel Your Gains</div></h2>
+      
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search products...">
+        <i class='bx bx-search'></i>
+      </div>
+      
       <main id="product-list"></main>
+      
+      <div class="pagination">
+        <button id="prev-page" disabled><i class='bx bx-chevron-left'></i></button>
+        <div id="page-numbers"></div>
+        <button id="next-page"><i class='bx bx-chevron-right'></i></button>
+      </div>
     </div>
   </section>
 
@@ -65,7 +75,7 @@
       <div class="modal-content">
         <span class="close" onclick="closeCheckout()">&times;</span>
         <h2>Checkout</h2>
-        <div id="checkout-items"></div> <!-- This will now contain items with delete buttons -->
+        <div id="checkout-items"></div>
         <p><br>Total:&nbsp;$<span id="total-price">0</span></p>
         <button onclick="confirmPayment()">Pay Now</button>
       </div>
@@ -73,8 +83,8 @@
   
     <div id="confirmation-modal" class="modal hidden">
       <div class="modal-content">
-        <h2>Payment Successful!</h2>
-        <p>Thank you for your order.</p>
+        <h2>Payment Successful! 💸</h2>
+        <p>Thank you for your order 😁</p>
         <button onclick="closeConfirmation()">Close</button>
       </div>
     </div>

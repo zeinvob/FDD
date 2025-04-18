@@ -53,7 +53,7 @@ function submit()
         }
     }
 
-    // If any question is not answered, show alert and stop
+    // question is not answered, show alert and stop
     if (!allAnswered) {
         alert("Please answer all questions before submitting!");
         return;
