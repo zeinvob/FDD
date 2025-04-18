@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Protein Shake Shop</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./Images/title_icon-04.png">
+  <link rel="stylesheet" type="text/css" href="./order.css">
+</head>
+<body>
+  <div class="bg"><img src="./Images/Nutrition/n1.jpg" alt="background"></div>
+  
+  <section>
+    <nav id="nav">
+      <div class="container">
+        <div class="nav_wrapper">
+          <div class="left">
+            <a href="#">
+              <img src="./Images/logo-02.png" alt="splash-fitness" width="250px" onclick="window.location.href='./index.html';">
+            </a>
+          </div>
+          <div class="middle">
+            <div class="bar">
+              <ul>
+                <a href="./index.html"><li class="home">Home</li></a>
+                <a href="./About.html"><li>About</li></a>
+                <a href="#"><li>Blog</li></a>
+                <a href="#"><li>Packages</li></a>
+                <a href="./contact.html"><li>Contact</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div id="cart">
+                <i class='bx bx-cart'></i> (<span id="cart-count">0</span>)
+              </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section class="protein-shop">
+    <div class="container">
+      <h2 class="section-title">Protein Shakes: &nbsp;<div>Fuel Your Gains</div></h2>
+      <main id="product-list"></main>
+    </div>
+  </section>
+
+  <section>
+    <div id="product-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-name"></h2>
+        <p id="modal-description"></p>
+        <label for="servings">Choose Servings:</label>
+        <select id="serving-select"></select>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  
+    <div id="checkout-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" onclick="closeCheckout()">&times;</span>
+        <h2>Checkout</h2>
+        <div id="checkout-items"></div> <!-- This will now contain items with delete buttons -->
+        <p><br>Total:&nbsp;$<span id="total-price">0</span></p>
+        <button onclick="confirmPayment()">Pay Now</button>
+      </div>
+    </div>
+  
+    <div id="confirmation-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Payment Successful!</h2>
+        <p>Thank you for your order.</p>
+        <button onclick="closeConfirmation()">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <button class="scrollToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+    <i class='bx bx-up-arrow-alt'></i>
+  </button>
+
+  <section>
+    <footer id="footer">
+      <div class="row">
+        <div class="col">
+          <img src="./Images/logo-01.png" alt="splash-fitness" class="logo" onclick="window.location.href='./index.html';">
+          <p style="font-size: 15px;">&nbsp;&nbsp;&nbsp;Train Together, Grow Together</p>
+        </div>
+        <div class="col">
+          <h3>Gym Center Address</h3>
+          <p><a href="https://maps.app.goo.gl/3rHVtaUX1z4BDh7L7" target="_blank" class="nolly">Retail Park, Regent Rd<br>
+            Salford M5 3TP, Manchester, UK</a></p>
+          <p class="email-id"><a href="mailto:splashfitness@mail.com" class="nolly">splashfitness@gym.com</a></p>
+          <h4><a href="tel:+44 0123 2322" class="nolly">+44 0123 2322</a></h4>
+        </div>
+        <div class="col" id="links">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./nutrition.html">Nutrition & Fitness</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Newsletter</h3>
+          <form action="" method="get">
+            <i class='bx bxs-envelope'></i>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+          </form>
+          <div class="social-icons">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-instagram-alt'></i>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Splash Fitness &copy; 2025 - All rights reserved.</p>
+    </footer>
+  </section>
+
+  <script src="./order.js"></script>
+</body>
+</html>

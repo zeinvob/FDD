@@ -103,6 +103,22 @@ nav .right{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: -15px;
+}
+#cart {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  left: -50px;
+}
+
+#cart:hover {
+  color: #02bee4;
 }
 nav .middle ul li{
     display: inline-block;

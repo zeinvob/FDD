@@ -9,7 +9,6 @@
 body{
     background-color: rgb(0, 0, 0);
     width: 100%;
-    height: 330vh;
 }
 html{
     scroll-behavior: smooth;
@@ -99,10 +98,26 @@ nav .middle .bar{
 }
 nav .right{
     width: 17%;
-    height: 100px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: -15px;
+}
+#cart {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  left: -50px;
+}
+
+#cart:hover {
+  color: #02bee4;
 }
 nav .middle ul li{
     display: inline-block;
@@ -223,13 +238,13 @@ nav .middle ul .home {
     color: rgb(13, 160, 160); 
 }
 
-.herotext .contact-us button {
+.herotext .shop button {
     background-color: #191919;
     color: white;
     position: absolute;
     top: 318px;
     left: 230px;
-    width: 220px;
+    width: 160px;
     height: 52px;
     font-size: 21px;
     font-weight: 500;
@@ -246,7 +261,7 @@ nav .middle ul .home {
     z-index: 1;
 }
 
-.herotext .contact-us button::before {
+.herotext .shop button::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -258,7 +273,7 @@ nav .middle ul .home {
     z-index: -1;
 }
 
-.herotext .contact-us button:hover::before {
+.herotext .shop button:hover::before {
     opacity: 1;
 }
 
