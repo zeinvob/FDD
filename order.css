@@ -464,18 +464,17 @@ nav .middle ul li:hover {
   margin-top: 50px;
 }
 
-/* Footer styles */
-footer {
+/*footer*/
+footer{
   width: 100%;
   color: #ffffff;
   padding: 50px 0 20px;
-  background: linear-gradient(60deg, #000000, #0a1c25, #000000);
+  background: linear-gradient(60deg, #000000, #123241, #000000);
   background-size: 200% 200%;
   animation: change 7s infinite;
   font-family: poppins;
 }
-
-footer .logo {
+footer .logo{
   width: 80%;
   padding-top: 20%;
   margin-bottom: 4px;
@@ -483,8 +482,7 @@ footer .logo {
   cursor: pointer;
   transition: 1s;
 }
-
-footer .logo:hover {
+footer .logo:hover{
   transform: scale(1.05);
 }
 
@@ -496,45 +494,36 @@ footer .row {
   align-items: flex-start;
   justify-content: space-evenly;
 }
-
-footer .col {
+footer .col{
   flex-basis: 25%;
   padding: 10px;
 }
-
-#links {
-  position: relative;
-  left: 40px;
-}
-
-footer .col:nth-child(2),
-.col:nth-child(3) {
+footer .col:nth-child(2), .col:nth-child(3){
   flex-basis: 15%;
 }
-
-footer .col h3 {
+footer .col h3{
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
 }
-
-footer .email-id {
+footer .email-id{
   width: fit-content;
   border-bottom: 1px solid #ffffff;
   margin: 20px 0;
 }
-
-footer .row .col ul li {
+footer .row .col ul li{
   list-style: none;
   margin-bottom: 11px;
 }
-
-footer .row .col ul a {
+footer .row .col ul a{
   text-decoration: none;
   color: #ffffff;
 }
-
-footer form {
+#links{
+  position: relative;
+  left: 40px;
+}
+footer form{
   padding-bottom: 15px;
   display: flex;
   align-items: center;
@@ -542,21 +531,18 @@ footer form {
   border-bottom: 1px solid #ffffff;
   margin-bottom: 50px;
 }
-
-footer .bx {
+footer .bx{
   font-size: 18px;
   margin-right: 10px;
 }
-
-footer form input {
+footer form input{
   width: 100%;
   background-color: transparent;
   color: #ffffff;
   border: 0;
   outline: none;
 }
-
-footer form button {
+footer form button{
   background: transparent;
   color: #ffffff;
   border: 0;
@@ -564,8 +550,7 @@ footer form button {
   cursor: pointer;
   font-size: 17px;
 }
-
-footer .social-icons .bx {
+footer .social-icons .bx{
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -577,29 +562,37 @@ footer .social-icons .bx {
   margin-right: 15px;
   cursor: pointer;
   transition: 0.6s;
-  position: relative;
-  top: -30px;
 }
-
-footer .social-icons .bx:hover {
+footer .social-icons .bx:hover{
   color: #ffffff;
   background: #34adc5;
 }
-
-footer hr {
+footer hr{
   width: 90%;
   border: 0;
   border-bottom: 1px solid #ffffff;
   margin: 20px auto;
 }
-
-footer .copyright {
+footer .copyright{
   text-align: center;
 }
-
-.nolly {
+footer .thanks{
+  width: 300px;
+  height: 30px;
+  position: relative;
+  top:-40px;
+}
+footer .thanks p{
+  color:white;
+}
+.nolly{
   text-decoration: none;
   color: inherit;
+}
+
+#links {
+  position: relative;
+  left: 40px;
 }
 
 @media (max-width: 768px) {
