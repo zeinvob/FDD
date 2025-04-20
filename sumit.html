@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Splash: Registration Successful</title>
+    <link rel="icon" type="image/png" href="./Images/title_icon-04.png">
+    <style>
+      body {
+        background-color: #1e1e1e;
+        color: #fff;
+        font-family: "Lato", sans-serif;
+        text-align: center;
+        padding: 100px;
+      }
+      a {
+        color: red;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎉 Registration Complete!</h1>
+    <p>Your account has been successfully created and verified.</p>
+    <p><a href="index.html" style="color:rgb(0, 180, 180); text-decoration: none;">Return to Home</a></p>
+  </body>
+  <script>
+    function submitForm() {
+      // Simulate account verification
+      alert("Account successfully created! Verifying your information...");
+
+      // Simulate delay before redirecting to a confirmation page
+      setTimeout(function () {
+        window.location.href = "register-success.html"; // destination after "verification"
+      }, 2000); // 2-second delay
+
+      return false; // prevent default form submission
+    }
+  </script>
+</html>

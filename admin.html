@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- external css cdn -->
+    <link rel="stylesheet" href="admin.css" />
+    <title>Splash: Admin Dashboard</title>
+    <link rel="icon" type="image/png" href="./Images/title_icon-04.png">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <!-- logo -->
+          <h2 class="h4text-primary text-center py-2">
+            <i class="fa-solid fa-user-tie"></i>
+            <span class="text-uppercase d-none d-lg-inline">Admin</span>
+          </h2>
+
+          <!-- menu section -->
+          <div class="list-group">
+            <span
+              class="d-none d-lg-block list-group-item list-group-item-action"
+              aria-current="true"
+            >
+              Controls
+            </span>
+
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-center text-lg-start active"
+            >
+              <i class="fa-solid fa-house me-2"></i>
+              <span class="d-none d-lg-inline">Dashboard</span>
+              <span class="badge rounded-pill text-bg-danger float-end"
+                >20</span
+              >
+            </a>
+
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-center text-lg-start"
+            >
+              <i class="fa-solid fa-users me-2"></i>
+              <span class="d-none d-lg-inline">Users</span>
+            </a>
+
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-center text-lg-start"
+            >
+              <i class="fa-solid fa-chart-line me-2"></i>
+              <span class="d-none d-lg-inline">Statstics</span>
+            </a>
+
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-center text-lg-start"
+            >
+              <i class="fa-solid fa-flag me-2"></i>
+              <span class="d-none d-lg-inline">Report</span>
+            </a>
+          </div>
+
+          <!-- another menu section -->
+          <div class="list-group">
+            <span
+              class="d-none d-lg-block list-group-item list-group-item-action"
+              aria-current="true"
+            >
+              Controls
+            </span>
+
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-center text-lg-start"
+            >
+              <i class="fa-solid fa-house me-2"></i>
+              <span class="d-none d-lg-inline">Dashboard</span>
+              <span class="badge rounded-pill text-bg-danger float-end"
+                >20</span
+              >
+            </a>
+
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-center text-lg-start"
+            >
+              <i class="fa-solid fa-users me-2"></i>
+              <span class="d-none d-lg-inline">Users</span>
+            </a>
+
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-center text-lg-start"
+            >
+              <i class="fa-solid fa-chart-line me-2"></i>
+              <span class="d-none d-lg-inline">Statstics</span>
+            </a>
+
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-center text-lg-start"
+            >
+              <i class="fa-solid fa-flag me-2"></i>
+              <span class="d-none d-lg-inline">Report</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-10 bg-secondary">
+          <!-- nav bar -->
+          <div class="row bg-light">
+            <nav class="col d-flex">
+              <div class="flex-fill"></div>
+              <!-- nav bar -->
+              <ul class="nav">
+                <li class="nav-item"></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    ><i class="fa-regular fa-circle-user"></i
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">User Profile</a></li>
+                    <li><a class="dropdown-item" href="./index.html">Logout</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-solid fa-gear"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="container py-4">
+            <!-- alert box -->
+            <div class="alert alert-info" role="alert">
+              <i class="fa-solid fa-download me-2"></i>
+              A simple info alert-check it out!
+              <a href="#" class="ms-2">Download</a>
+            </div>
+
+            <!-- quick Statstics -->
+            <h3 class="h5 text-white-50">QUICK STATS</h3>
+            <div class="row d-flex flex-column flex-lg-row">
+              <div class="col mt-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">1,250</h4>
+                    <p class="card-text">
+                      <i class="fa-solid fa-chart-line"></i>Daily Visitors
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">8,410</h4>
+                    <p class="card-text">
+                      <i class="fa-solid fa-chart-line"></i>Weekly Visitors
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">12,560</h4>
+                    <p class="card-text">
+                      <i class="fa-solid fa-chart-line"></i>Monthly Visitors
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">102,250</h4>
+                    <p class="card-text">
+                      <i class="fa-solid fa-chart-line"></i>Yearly Visitors
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- location and data blocks -->
+            <div class="row mt-3">
+              <div class="col">
+                <h3 class="h5 text-white-50">Location</h3>
+                <div class="card-p-3" style="height: 280px">
+                  <div class="mb-2">
+                    <span class="text-muted">Regional</span>
+                    <div class="progress" style="height: 5px">
+                      <div class="progress-bar bg-success w-25"></div>
+                    </div>
+                  </div>
+                  <div class="mb-2 mt-5">
+                    <span class="text-muted">Global</span>
+                    <div class="progress" style="height: 5px">
+                      <div class="progress-bar bg-success w-75"></div>
+                    </div>
+                  </div>
+                  <div class="mb-2 mt-5">
+                    <span class="text-muted">Local</span>
+                    <div class="progress" style="height: 5px">
+                      <div class="progress-bar bg-success w-50"></div>
+                    </div>
+                  </div>
+                  <div class="mb-2 mt-5">
+                    <span class="text-muted">Internal</span>
+                    <div class="progress" style="height: 5px">
+                      <div class="progress-bar bg-success w-25"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <h3 class="h5 text-white-50">Data</h3>
+                <div class="card p-3" style="height: 280px">
+                  <div class="text-end">
+                    <button class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary">
+                      <i class="fa-regular fa-calendar-days"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-info"></i>
+                    </button>
+                  </div>
+
+                  <table class="table">
+                    <tr>
+                      <th>ID</th>
+                      <th>Age Group</th>
+                      <th>Data</th>
+                      <th>Progress</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>20-30</td>
+                      <td>36%</td>
+                      <td><i class="fa-solid fa-chart-pie"></i></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>30-40</td>
+                      <td>28%</td>
+                      <td><i class="fa-solid fa-chart-column"></i></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>40-50</td>
+                      <td>20%</td>
+                      <td><i class="fa-solid fa-chart-line"></i></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>>50</td>
+                      <td>11%</td>
+                      <td><i class="fa-solid fa-chart-bar"></i></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-3 bg-light">
+      <p class="text-center">
+        Splash Fitness &copy; 2025 - All rights reserved.
+      </p>
+    </footer>
+
+    <!-- font awesome js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

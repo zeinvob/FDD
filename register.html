@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splash: Registration</title>
+    <script src="./contact.js"></script>
+    <link rel="icon" type="image/png" href="./Images/title_icon-04.png">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="./packages.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <nav id="nav">
+        <div class="container">
+          <div class="nav_wrapper">
+            <div class="left">
+              <a href="#">
+                <img
+                  src="./Images/logo-02.png"
+                  alt="splash-fitness"
+                  width="250px"
+                  onclick="window.location.href='./index.html';"
+                />
+              </a>
+            </div>
+            <div class="middle">
+              <div class="bar">
+                <ul>
+                  <a href="./index.html"><li class="home">Home</li></a>
+                  <a href="./About.html"><li>About</li></a>
+                  <a href="./Blog.html"><li>Blog</li></a>
+                  <a href="./packages.html"><li>Packages</li></a>
+                  <a href="./contact.html"><li>Contact</li></a>
+                </ul>
+              </div>
+            </div>
+            <div class="right">
+              <div id="cart">
+                <i class='bx bxs-shopping-bag-alt' onclick="window.location.href='./order.html'"></i>
+              </div>
+              <button class="signin" onclick="window.location.href='./login.html';">
+                  LOGIN
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Registration Section -->
+
+    <div class="registration pt-5">
+      <div class="reg-container">
+        <h1 class="form-title">Registration Form</h1>
+        <form action="#" method="get" onclick="window.location.href='./sumit.html'">
+          <div class="main-user-info">
+            <div class="user-input-box">
+              <label for="fullName">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter Full Name"
+                required
+              />
+            </div>
+
+            <div class="user-input-box">
+              <label for="username">User Name</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter User Name"
+                required
+              />
+            </div>
+
+            <div class="user-input-box">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Email Address"
+                required
+              />
+            </div>
+
+            <div class="user-input-box">
+              <label for="phonenumber">Phone Number</label>
+              <input
+                type="tel"
+                id="phonenumber"
+                name="phonenumber"
+                placeholder="Enter Phone Number"
+                required
+              />
+            </div>
+
+            <div class="user-input-box">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="user-input-box">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Enter Address"
+                required
+              />
+            </div>
+
+            <div class="user-input-box">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter Your Password"
+                required
+              />
+            </div>
+
+            <div class="user-input-box">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="gender-details-box">
+            <span class="gender-title">Gender</span>
+            <div class="gender-category">
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="other" value="other" />
+              <label for="other">Other</label>
+            </div>
+          </div>
+
+          <div class="additional-info">
+            <div class="user-input-box">
+              <label for="membershipType">Membership Type</label>
+              <select id="membershipType" name="membershipType" required>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="Standard">Standard</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="additional-info">
+            <div class="user-input-box">
+              <label for="trainerType">Trainer</label>
+              <select id="trainerType" name="trainerType" required>
+                <option value="Alexa Smith">Alexa Smith</option>
+                <option value="Rex Jordan">Rex Jordan</option>
+                <option value="Alisha Stone">Alisha Stone</option>
+                <option value="Andrew John">Andrew John</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-submit-btn">
+            <input
+              type="button"
+              value="Submit"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <section>
+      <footer id="footer">
+        <div class="row">
+          <div class="col">
+            <img
+              src="./Images/logo-01.png"
+              alt="splash-fitness"
+              class="logo"
+              onclick="window.location.href='./index.html';"
+            />
+            <p style="font-size: 15px">
+              &nbsp;&nbsp;&nbsp;Train Together, Grow Together
+            </p>
+          </div>
+          <div class="col">
+            <h3>Gym Center Address</h3>
+            <p>
+              <a
+                href="https://maps.app.goo.gl/3rHVtaUX1z4BDh7L7"
+                target="_blank"
+                class="nolly"
+                >Retail Park, Regent Rd<br />
+                Salford M5 3TP, Manchester, UK</a
+              >
+            </p>
+            <p class="email-id">
+              <a href="mailto:splashfitness@mail.com" class="nolly"
+                >splashfitness@gym.com</a
+              >
+            </p>
+            <h4><a href="tel:+44 0123 2322" class="nolly">+44 0123 2322</a></h4>
+          </div>
+          <div class="col" id="links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./About.html">About</a></li>
+              <li><a href="./Blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./nutrition.html">Nutrition & Fitness</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Newsletter</h3>
+            <form action="" method="get" onsubmit="return newsletter(event)">
+              <i class="bx bxs-envelope"></i>
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </form>
+            <div class="thanks"><p id="mess"></p></div>
+            <div class="social-icons">
+              <i class="bx bxl-facebook-circle"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-instagram-alt"></i>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          Splash Fitness &copy; 2025 - All rights reserved.
+        </p>
+      </footer>
+
+    <!-- bootstrap js  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

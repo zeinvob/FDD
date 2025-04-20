@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="Alexa.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="./contact.js"></script>
+  <link rel="icon" type="image/png" href="./Images/title_icon-04.png" alt="splash fitness">
+
+  <title>Splash: Rex Jordan</title>
+</head>
+<body>
+
+	<div class="body-container">
+		<!-- Header-->
+		<nav>
+			<div class="container">
+				<div class="nav_wrapper">
+					<div class="left">
+						<a href ="#">
+							<img src="./Images/logo-02.png" width="250px" onclick="window.location.href='./index.html';">
+						</a>
+					</div>
+					<div class="middle">
+						<div class="bar">
+							<ul>
+								<a href = "./index.html"><li>Home</li></a>
+								<a href = "./About.html"><li>About</li></a>
+								<a href = "Blog.html"><li>Blog</li></a>
+								<a href = "./packages.html"><li>Packages</li></a>
+								<a href = "./contact.html"><li>Contact</li></a>
+							</ul>
+						</div>
+					</div>
+					<div class="right">
+						<div id="cart">
+                            <i class='bx bxs-shopping-bag-alt' onclick="window.location.href='./order.html'"></i>
+                          </div>
+                        <button class="signin" onclick="window.location.href='./login.html';">
+                            LOGIN
+                        </button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	
+		
+		<div class="backgroundlogo">
+			<div class="one arrival">
+				<img src="./Images/bg image logo-03.png">
+			</div>
+		</div>
+		<!-- SECTION 1: Hero -->
+		<section class="hero-section">
+			<div class="text">
+			<h2>Hi, I'm Rex Jordan 🏋️‍♂️</h2>
+			<p>
+                a professional strength and conditioning coach with nearly two decades of experience helping people become the strongest version of themselves. I started my career in 2006 at IronCore Gym in Chicago, where I built my foundation in athletic training and performance development. Over the years, I’ve coached everyone from high school athletes to busy professionals, specializing in muscle building, endurance improvement, and injury-safe lifting techniques. My approach is intense but supportive — I’ll push you to break limits while making sure you train smart and recover strong. Whether you're looking to compete or just crush your fitness goals, I’ll be with you every rep of the way.
+            </p>
+			</div>
+	
+			<div class="headshot">
+				<img src="./Images/card2.jpg" alt="john doe headshot">
+			</div>
+		</section>
+	
+	
+	
+		<!-- SECTION 3: Testimony -->
+		<section id="testimony" class="testimony-section">
+			<h2>Client Testimony</h2>
+	
+			<div class="group">
+			<div class="person-details">
+				<img src="https://images.unsplash.com/photo-1484515991647-c5760fcecfc7?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+				<p>Macus T</p>
+			</div>
+	
+			<div class="text">
+				"Rex is the kind of coach who sees potential in you before you see it yourself. I came in wanting to improve my lifts — I walked out with a completely new mindset and a stronger body than I thought possible. Every session is focused, challenging, and personal. Rex doesn’t just train you — he invests in your success. Highly recommend him to anyone serious about leveling up."
+			</div>
+			</div>
+		</section>
+	</div>
+
+    <section>
+        <footer id="footer">
+            <div class="row">
+                <div class="col">
+                    <img src="./Images/logo-01.png"  alt="splash-fitness" class="logo" onclick="window.location.href='./index.html';">
+                    <p style="font-size: 15px;">&nbsp;&nbsp;&nbsp;Train Together, Grow Together</p>
+                </div>
+                <div class="col">
+                    <h3 >Gym Center Address</h3>
+                    <p><a href="https://maps.app.goo.gl/3rHVtaUX1z4BDh7L7" target="_blank" class="nolly">Retail Park, Regent Rd<br>
+                        Salford M5 3TP, Manchester, UK</a></p>
+                    <p class="email-id"><a href="mailto:splashfitness@mail.com" class="nolly">splashfitness@gym.com</a></p>
+                    <h4><a href="tel:+44 0123 2322" class="nolly">+44 0123 2322</a></h4>
+                </div>
+                <div class="col" id="links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./About.html">About</a></li>
+                        <li><a href="./Blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./nutrition.html">Nutrition & Fitness</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Newsletter</h3>
+                    <form action="" method="get" onsubmit="return newsletter(event)">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+                    </form>
+                    <div class="thanks"><p id="mess"></p></div>
+                    <div class="social-icons">
+                        <i class='bx bxl-facebook-circle' ></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram-alt' ></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Splash Fitness &copy; 2025 - All rights reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>

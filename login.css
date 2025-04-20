@@ -262,6 +262,18 @@ nav .middle ul li:hover{
 .register-link a:hover{
     text-decoration: underline;
 }
+.wrapper .admin-link{
+    font-size: 11px;
+    position: absolute;
+    font-weight: 400;
+    opacity: 0.7;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+.admin-link a:hover{
+    text-decoration: underline;
+}
 
 .forgot_form{
     display: flex;

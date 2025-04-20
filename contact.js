@@ -130,6 +130,84 @@ function handleSubmit(event)
     return false;
   }
 
+    //------------------
+  function handleLogin(event) 
+  {
+    event.preventDefault(); 
+    const form = event.target;  
+  
+    const sections = document.getElementsByTagName("section");
+    for (let i = 0; i < sections.length; i++) 
+    {
+      sections[i].classList.add("blur");
+    }
+    document.getElementsByClassName("btn")[0].style.display="none";
+  
+    const popup = document.getElementById("popup");
+    const popupText = document.getElementById("popupText");
+
+    popup.style.display = "block";
+    popupText.textContent = "Logging...";
+
+    setTimeout(() => {
+      popupText.textContent = "Login Successfully!";
+  
+      form.reset();
+  
+      setTimeout(() => {
+        popup.style.display = "none";
+        const sections = document.getElementsByTagName("section");
+        for (let i = 0; i < sections.length; i++) 
+        {
+            sections[i].classList.remove("blur");
+        }
+        window.location.href = "./index.html";
+        document.getElementsByClassName("btn")[0].style.display="block";
+      }, 2000);
+    }, 3000);
+  
+    return false;
+  }
+
+  //------------------
+  function handleAdminLogin(event) 
+  {
+    event.preventDefault(); 
+    const form = event.target;  
+  
+    const sections = document.getElementsByTagName("section");
+    for (let i = 0; i < sections.length; i++) 
+    {
+      sections[i].classList.add("blur");
+    }
+    document.getElementsByClassName("btn")[0].style.display="none";
+  
+    const popup = document.getElementById("popup");
+    const popupText = document.getElementById("popupText");
+
+    popup.style.display = "block";
+    popupText.textContent = "Logging...";
+
+    setTimeout(() => {
+      popupText.textContent = "Login Successfully!";
+  
+      form.reset();
+  
+      setTimeout(() => {
+        popup.style.display = "none";
+        const sections = document.getElementsByTagName("section");
+        for (let i = 0; i < sections.length; i++) 
+        {
+            sections[i].classList.remove("blur");
+        }
+        window.location.href = "./admin.html";
+        document.getElementsByClassName("btn")[0].style.display="block";
+      }, 2000);
+    }, 3000);
+  
+    return false;
+  }
+
   //-----------------
   function showIcon() 
   {

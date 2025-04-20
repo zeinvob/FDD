@@ -119,6 +119,9 @@ nav .middle ul li:hover{
     letter-spacing: 1px;
     color:#02bee4;
 }
+nav .middle ul .home {
+    color: #02bee4;
+}
 
 .right .signin{
     width: 70%;

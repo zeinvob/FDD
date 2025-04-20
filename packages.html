@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splash: Packages</title>
+    <link rel="icon" type="image/png" href="./Images/title_icon-04.png">
+    <script src="./contact.js"></script>
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="packages.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Animate.css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav section -->
+    <nav>
+      <div class="container">
+        <div class="nav_wrapper">
+          <div class="left">
+            <a href="#">
+              <img
+                src="./Images/logo-02.png"
+                alt="splash-fitness"
+                width="250px"
+                onclick="window.location.href='./index.html';"
+              />
+            </a>
+          </div>
+          <div class="middle">
+            <div class="bar">
+              <ul>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./About.html"><li>About</li></a>
+                <a href="./Blog.html"><li>Blog</li></a>
+                <a href="./packages.html"><li  class="home">Packages</li></a>
+                <a href="./contact.html"><li>Contact</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div id="cart">
+              <i class='bx bxs-shopping-bag-alt' onclick="window.location.href='./order.html'"></i>
+            </div>
+            <button class="signin" onclick="window.location.href='./login.html';">
+                LOGIN
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Welcome Section  -->
+    <section class="welcome" id="about">
+      <div class="welcome-container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="video-container">
+              <img
+                src="images/beautiful-asian-elegance-female-enjoy-online-shopping-with-credit-card-smartphone-business-ideas-concept.jpg"
+                alt="see your photo in here"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="welcome-content text-center text-md-start">
+              <h1 class="welcome-heading fadeInRight-1s">
+                Our Gym is <span>"Your Gym"</span>
+              </h1>
+              <p
+                class="animate__animated animate__fadeInRight animate__delay-2s"
+              >
+                Splash is a premium fitness center that offers state-of-the-art
+                equipment, experienced trainers, and customized workout plans to
+                help you achieve your fitness goals. Our welcoming environment
+                and friendly staff make every visit an enjoyable experience.
+                Join us to transform your body, boost your energy, and improve
+                your overall health and wellbeing.
+              </p>
+              <p
+                class="animate__animated animate__fadeInRight animate__delay-2s"
+              >
+                Founded by fitness enthusiasts with a passion for health and
+                wellness, Splash was born out of the desire to create a space
+                where everyone, regardless of their fitness level, can thrive.
+                We started with a simple idea: to make fitness accessible,
+                enjoyable, and effective for everyone. Today, Splash stands as a
+                testament to that vision, offering a wide range of programs and
+                resources designed to help you succeed.
+              </p>
+              <a
+                href="./join.html"
+                class="btn_welcome animate__animated animate__fadeInUp animate__delay-3s"
+                >Explore Programs</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section  -->
+    <section class="programs" id="programs">
+      <h2
+        class="programs-heading animate__animated animate__fadeInDown animate__delay-1s"
+      >
+        Our <span>Programs</span>
+      </h2>
+      <div class="programs-content">
+        <div
+          class="row-programs animate__animated animate__zoomIn animate__delay-2s"
+        >
+          <img src="images/Yoga.jpg" alt="Yoga Program" class="program-img" />
+          <h4 class="programs-description">Yoga Programs</h4>
+          <p class="programs-description">
+            Find balance and inner peace with our yoga program. Improve
+            flexibility, strength, and mental clarity through various styles,
+            suitable for all levels.Enhance your physical and mental well-being
+            with expert guidance.
+          </p>
+          <a href="register.html" class="program-btn">Join Now</a>
+        </div>
+
+        <div
+          class="row-programs animate__animated animate__zoomIn animate__delay-3s"
+        >
+          <img
+            src="images/pilates-reformer.jpg"
+            alt="Pilates Program"
+            class="program-img"
+          />
+          <h4 class="programs-description">Pilates Programs</h4>
+          <p class="programs-description">
+            Strengthen your core and improve posture with our Pilates program.
+            Focus on controlled movements for enhanced flexibility, balance, and
+            overall body strength. Ideal for anyone seeking low-impact,
+            effective exercise.
+          </p>
+          <a href="register.html" class="program-btn">Join Now</a>
+        </div>
+
+        <div
+          class="row-programs animate__animated animate__zoomIn animate__delay-4s"
+        >
+          <img
+            src="images/weight gain.jpg"
+            alt="Weight Gain Program"
+            class="program-img"
+          />
+          <h4 class="programs-description">Weight Gain</h4>
+          <p class="programs-description">
+            Achieve healthy weight gain with a balanced diet and tailored
+            workouts. Build muscle mass and enhance your physique and strength
+            with our expert guidance. Perfect for those looking to improve their
+            overall health.
+          </p>
+          <a href="register.html" class="program-btn">Join Now</a>
+        </div>
+
+        <div
+          class="row-programs animate__animated animate__zoomIn animate__delay-5s"
+        >
+          <img
+            src="images/weight loss.jpg"
+            alt="Weight Loss Program"
+            class="program-img"
+          />
+          <h4 class="programs-description">Weight Loss</h4>
+          <p class="programs-description">
+            Safely shed excess pounds with our weight loss program. Combine a
+            balanced diet with effective cardio and strength exercises for a
+            leaner, healthier body. Ideal for achieving sustainable weight loss
+            and improved fitness.
+          </p>
+          <a href="register.html" class="program-btn">Join Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- trainer section  -->
+    <section class="trainer" id="trainer">
+      <h2
+        class="trainer-heading animate__animated animate__fadeInDown animate__delay-1s fw-bold"
+      >
+        Our <span>Trainers</span>
+      </h2>
+      <div class="trainer-content">
+        <div
+          class="row-trainer animate__animated animate__zoomIn animate__delay-2s"
+        >
+          <img
+            src="images/trainer_gym_Amelia.jpg"
+            alt="Fitness"
+            class="trainer-img"
+          />
+          <h4 class="trainer-description">Alisha Stone</h4>
+          <h6 class="trainer-description">Fitness Expert</h6>
+          <p class="programs-description">
+            Specializing in strength training and HIIT. Inspires and motivates
+            members with personalized fitness plans.
+          </p>
+          <a href="register.html" class="trainer-btn">Join Now</a>
+        </div>
+        <div
+          class="row-trainer animate__animated animate__zoomIn animate__delay-2s"
+        >
+          <img
+            src="images/trainer_pila_lylia.jpg"
+            alt="Fitness"
+            class="trainer-img"
+          />
+          <h4 class="trainer-description">Lylia</h4>
+          <h6 class="trainer-description">Pilates Instructor</h6>
+          <p class="programs-description">
+            Focusing on flexibility, posture, and core strength. Offers
+            personalized Pilates routines for balanced body and mind.
+          </p>
+          <a href="register.html" class="trainer-btn">Join Now</a>
+        </div>
+        <div
+          class="row-trainer animate__animated animate__zoomIn animate__delay-2s"
+        >
+          <img
+            src="images/trainer_Gym_Andrew.jpg"
+            alt="Fitness"
+            class="trainer-img"
+          />
+          <h4 class="trainer-description">Rex Jordan</h4>
+          <h6 class="trainer-description">Fitness Expert</h6>
+          <p class="programs-description">
+            Specializing in customized fitness plans, strength training, and
+            cardiovascular health. Join to achieve your goals.
+          </p>
+          <a href="register.html" class="trainer-btn">Join Now</a>
+        </div>
+        <div
+          class="row-trainer animate__animated animate__zoomIn animate__delay-2s"
+        >
+          <img
+            src="images/trainer_yoga_Clara.jpg"
+            alt="Fitness"
+            class="trainer-img"
+          />
+          <h4 class="trainer-description">Clara</h4>
+          <h6 class="trainer-description">Yoga Instructor</h6>
+          <p class="programs-description">
+            Specializing in various yoga styles. Helps achieve flexibility,
+            strength, and mental clarity. Join for rejuvenation.
+          </p>
+          <a href="register.html" class="trainer-btn">Join Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership Pricing Section -->
+    <section id="pricing" class="py-5">
+      <div class="container">
+        <h2 class="pricing-headiing text-center mb-5 fw-bold">
+          Our <span>Membership Plans</span>
+        </h2>
+        <div class="row">
+          <!-- Basic Plan -->
+          <div class="col-lg-4">
+            <div class="card text-center shadow">
+              <div class="card-header">
+                <h3>Basic Plan</h3>
+                <p class="price">$19/month</p>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Access to Gym</li>
+                  <li class="list-group-item">Free Wi-Fi</li>
+                  <li class="list-group-item">1 Group Class per Week</li>
+                </ul>
+                <a href="register.html" class="btn btn-primary mt-3"
+                  >Join Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="col-lg-4">
+            <div class="card text-center shadow">
+              <div class="card-header">
+                <h3>Premium Plan</h3>
+                <p class="price">$49/month</p>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Access to Gym</li>
+                  <li class="list-group-item">Free Wi-Fi</li>
+                  <li class="list-group-item">Unlimited Group Classes</li>
+                  <li class="list-group-item">1 Personal Training Session</li>
+                </ul>
+                <a href="register.html" class="btn btn-primary mt-3"
+                  >Join Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Standard Plan -->
+          <div class="col-lg-4">
+            <div class="card text-center shadow">
+              <div class="card-header">
+                <h3>Standard Plan</h3>
+                <p class="price">$99/month</p>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">All Premium Benefits</li>
+                  <li class="list-group-item">24/7 Gym Access</li>
+                  <li class="list-group-item">3 Personal Training Sessions</li>
+                  <li class="list-group-item">Private Locker Room</li>
+                </ul>
+                <a href="register.html" class="btn btn-primary mt-3"
+                  >Join Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- carousel  -->
+    <div
+      id="carouselFade"
+      class="custom carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-interval="1500"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/CoreX_Banner4.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/CoreX_Banner2.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/CoreX_Banner3.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/CoreX_Banner1.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- ecommerce section  -->
+    <section class="ecommerce" id="ecommerce">
+      <div class="ecommerce-container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="photo-container animate__animated animate__slideInLeft">
+              <img src="images/ecommerce.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ecommerce-content text-center text-md-start">
+              <h1 class="ecommerce-heading fadeInRight-1s">
+                Our Ecommerce is <span>Here</span>
+              </h1>
+              <p
+                class="animate__animated animate__fadeInRight animate__delay-2s"
+              >
+                As Splash Fitness continues to expand its online presence, this
+                new eCommerce platform will play a crucial role in connecting
+                with customers and offering them the best products to support
+                their fitness goals. Get ready to take your fitness journey to
+                the next level with the new Splash Fitness eCommerce site!
+              </p>
+              <p
+                class="animate__animated animate__fadeInRight animate__delay-2s"
+              >
+                Get ready to elevate your fitness game with the all-new
+                <strong>Splash Fitness eCommerce</strong> platform! 🚀 Packed
+                with the latest gear, cutting-edge equipment, and everything you
+                need to stay ahead in your fitness journey, our store is
+                designed to offer an unparalleled shopping experience. Whether
+                you’re a beginner or a pro, you'll find exactly what you need,
+                tailored just for you.
+              </p>
+              <a
+                href="./order.html"
+                class="btn_ecommerce animate__animated animate__fadeInUp animate__delay-3s"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder  -->
+    <section class="founder-speech">
+      <div class="container-founder"></div>
+    </section>
+
+    <!-- Meet our Founder section -->
+    <div class="container founder-section">
+      <h2 class="animate__animated animate__fadeInDown fw-bold">
+        Meet the Founders of Splash Fitness
+      </h2>
+
+      <!-- Mr. Andrew Section -->
+      <div class="row align-items-center mt-5">
+        <div class="col-md-4 animate__animated animate__slideInLeft">
+          <img
+            src="images/ownerphoto-b.jpg"
+            alt="Mr. Andrew"
+            class="founder-photo"
+          />
+        </div>
+        <div class="col-md-8 animate__animated animate__slideInRight">
+          <div class="founder-name">Mr. Andrew</div>
+          <div class="founder-title">Co-Founder & Fitness Expert</div>
+          <p class="founder-bio">
+            Andrew has always been an advocate for a healthy lifestyle. With a
+            background in sports science and personal training, he brings a
+            wealth of knowledge and experience to Splash Fitness. His dedication
+            to fitness is not just about physical strength but also about mental
+            well-being.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mrs. Clara Section -->
+      <div class="row align-items-center mt-5">
+        <div class="col-md-8 animate__animated animate__slideInLeft">
+          <div class="founder-name">Mrs. Clara</div>
+          <div class="founder-title">Co-Founder & Yoga Instructor</div>
+          <p class="founder-bio-2">
+            Clara complements Andrew's expertise with her background in yoga and
+            wellness coaching. She understands that true fitness is a holistic
+            journey that combines physical exercise with proper nutrition and
+            mental health practices.
+          </p>
+        </div>
+        <div class="col-md-4 animate__animated animate__slideInRight">
+          <img
+            src="images/ownerphoto-g.jpg"
+            alt="Mrs. Clara"
+            class="founder-photo"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Founder section  -->
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+      <div class="container mt-5">
+        <div class="text-center mb-5">
+          <p class="fs-2">We'd love to hear from you!</p>
+        </div>
+        <div class="row">
+          <!-- Contact Information -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.2811016360417!2d-2.26569681706685!3d53.47803977732129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1e01957925f%3A0x2ebc41817dd00176!2sRegent%20Retail%20Park!5e0!3m2!1sen!2smy!4v1744735650009!5m2!1sen!2smy"
+                  width="600"
+                  height="450"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                >
+                </iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Get in Touch</h5>
+                <p class="card-text">
+                  <i class="fa-solid fa-location-dot me-2"></i>
+                  Retail Park, Regent Rd <br />
+                  Salford M5 3TP Manchester, UK
+                </p>
+                <p class="card-text">
+                  <i class="fa-solid fa-phone me-2"></i>
+                  +44 0123 2322
+                </p>
+                <p class="card-text">
+                  <i class="fa-solid fa-envelope me-2"></i>
+                  splashfitness@gym.com
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Form -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Send Us a Message</h5>
+                <form action="submit_contact_form.php" method="post">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Phone Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="submit-line">
+                    <a href="sumit.html" class="btn">
+                      <i class="bx bx-paper-plane"></i> SEND
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section>
+      <footer id="footer">
+        <div class="row">
+          <div class="col">
+            <img
+              src="./Images/logo-01.png"
+              alt="splash-fitness"
+              class="logo"
+              onclick="window.location.href='./index.html';"
+            />
+            <p style="font-size: 15px">
+              &nbsp;&nbsp;&nbsp;Train Together, Grow Together
+            </p>
+          </div>
+          <div class="col">
+            <h3>Gym Center Address</h3>
+            <p>
+              <a
+                href="https://maps.app.goo.gl/3rHVtaUX1z4BDh7L7"
+                target="_blank"
+                class="nolly"
+                >Retail Park, Regent Rd<br />
+                Salford M5 3TP, Manchester, UK</a
+              >
+            </p>
+            <p class="email-id">
+              <a href="mailto:splashfitness@mail.com" class="nolly"
+                >splashfitness@gym.com</a
+              >
+            </p>
+            <h4><a href="tel:+44 0123 2322" class="nolly">+44 0123 2322</a></h4>
+          </div>
+          <div class="col" id="links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./About.html">About</a></li>
+              <li><a href="./Blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./nutrition.html">Nutrition & Fitness</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Newsletter</h3>
+            <form action="" method="get" onsubmit="return newsletter(event)">
+              <i class="bx bxs-envelope"></i>
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </form>
+            <div class="thanks"><p id="mess"></p></div>
+            <div class="social-icons">
+              <i class="bx bxl-facebook-circle"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-instagram-alt"></i>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          Splash Fitness &copy; 2025 - All rights reserved.
+        </p>
+      </footer>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
