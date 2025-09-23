@@ -326,7 +326,7 @@ nav .middle ul .home {
 
 .land3 .text3{
     font-family: Poppins;
-    font-size: 400%;
+    font-size: 100%;
 
     color: rgba(3, 206, 247, 0.493);
     font-weight: bolder;
@@ -336,7 +336,6 @@ nav .middle ul .home {
 }
 .land3 .texti{
     position:absolute;
-    font-size: 40px;
     top: 0%;
     color:rgba(3, 206, 247, 0.493);
     animation: texti 2s alternate infinite;
@@ -350,7 +349,6 @@ nav .middle ul .home {
 }
 .textie{
     position:absolute;
-    font-size: 40px;
     top: -29%;
     color:rgba(3, 206, 247, 0.11);
     animation: textie 2s alternate infinite;
