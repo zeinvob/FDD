@@ -21,8 +21,7 @@ const item = [
     servings: [15, 30],
     pricePerServing: 2.0,
     offer: "<br>",
-    image: "https://dymatize.imgix.net/a/products/Super_Mass_Gainer_Rich_Chocolate_Hero_Product_Line_Page_Dymatize_Website_3840x2156.jpg?ar=3840%3A2156&auto=format%2Ccompress&fit=crop&ixlib=php-3.1.0&w=2000&s=6caca47f5a31af4ab96ec4e0650036ae"
-  },
+    image: "https://tse2.mm.bing.net/th/id/OIP.9WZqlbuyImPZBnJ9LB8_WwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"},
   {
     name: "Isolate Protein",
     description: "Fast-absorbing protein isolate",
