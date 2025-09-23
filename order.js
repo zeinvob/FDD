@@ -60,7 +60,7 @@ const item = [
     servings: [25, 50],
     pricePerServing: 2.2,
     offer: "<br>",
-    image: "https://www.body-supplies.nl/images/500x500/r/products/pure.-hydro-whey-pro-750gr.jpg"
+    image: "https://http2.mlstatic.com/hydro-whey-on-optimum-331lbs-proteina-hidrolisada-whey-D_NQ_NP_757511-MLB31921102678_082019-F.jpg"
   },
   {
     name: "Creatine Monohydrate",
